@@ -1,0 +1,5 @@
+npx gltfjsx bike.glb
+npx gltfjsx cafeSignBoard.glb
+npx gltfjsx crate.glb
+npx gltfjsx mailbox.glb
+npx gltfjsx vendingMachine.glb

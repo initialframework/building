@@ -1,0 +1,5 @@
+npx gltfjsx condenserUnitTypeALeftBackFloorTwo.glb
+npx gltfjsx condenserUnitTypeBLeftBackFloorTwo.glb
+npx gltfjsx condenserUnitTypeCLeftBackFloorTwo.glb
+npx gltfjsx condenserUnitTypeDLeftBackFloorTwo.glb
+npx gltfjsx wallVentLeftBackFloorTwo.glb

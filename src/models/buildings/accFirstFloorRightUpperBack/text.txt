@@ -1,0 +1,5 @@
+npx gltfjsx bigElectricBox.glb
+npx gltfjsx compoundElectricBox.glb
+npx gltfjsx condenserUnitTypeA.glb
+npx gltfjsx condenserUnitTypeD.glb
+npx gltfjsx kitchenVent.glb

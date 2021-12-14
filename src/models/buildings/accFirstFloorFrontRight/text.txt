@@ -1,0 +1,5 @@
+npx gltfjsx bonsai.glb
+npx gltfjsx condenserUnit.glb
+npx gltfjsx crate.glb
+npx gltfjsx gachaponMachine.glb
+npx gltfjsx mailbox.glb

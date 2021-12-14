@@ -1,0 +1,5 @@
+npx gltfjsx bike.glb
+npx gltfjsx bottles.glb
+npx gltfjsx crate.glb
+npx gltfjsx greenTrashBin.glb
+npx gltfjsx trashBinWithCat.glb
