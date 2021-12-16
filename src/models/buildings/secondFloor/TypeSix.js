@@ -7,7 +7,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function TypeSix({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/typeSix.glb");
+  const { nodes, materials } = useGLTF("/buildings/secondFloor/typeSix.glb");
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
@@ -27,4 +27,4 @@ export default function TypeSix({ ...props }) {
   );
 }
 
-useGLTF.preload("/typeSix.glb");
+useGLTF.preload("/buildings/secondFloor/typeSix.glb");

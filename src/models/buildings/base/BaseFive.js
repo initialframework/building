@@ -7,7 +7,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function BaseFive({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/baseFive.glb");
+  const { nodes, materials } = useGLTF("/buildings/base/baseFive.glb");
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh
@@ -20,4 +20,4 @@ export default function BaseFive({ ...props }) {
   );
 }
 
-useGLTF.preload("/baseFive.glb");
+useGLTF.preload("/buildings/base/baseFive.glb");

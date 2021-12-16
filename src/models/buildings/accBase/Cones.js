@@ -7,7 +7,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function Cones({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/cones.glb");
+  const { nodes, materials } = useGLTF("/buildings/accBase/cones.glb");
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh
@@ -19,4 +19,4 @@ export default function Cones({ ...props }) {
   );
 }
 
-useGLTF.preload("/cones.glb");
+useGLTF.preload("/buildings/accBase/cones.glb");

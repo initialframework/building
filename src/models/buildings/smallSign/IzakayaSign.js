@@ -7,7 +7,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function IzakayaSign({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/izakayaSign.glb");
+  const { nodes, materials } = useGLTF("/buildings/smallSign/izakayaSign.glb");
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
@@ -24,4 +24,4 @@ export default function IzakayaSign({ ...props }) {
   );
 }
 
-useGLTF.preload("/izakayaSign.glb");
+useGLTF.preload("/buildings/smallSign/izakayaSign.glb");

@@ -1,18 +1,18 @@
-npx gltfjsx arcade.glb
-npx gltfjsx barOne.glb
-npx gltfjsx barTwo.glb
-npx gltfjsx classicOne.glb
-npx gltfjsx classicThree.glb
-npx gltfjsx classicTwo.glb
-npx gltfjsx laundry.glb
-npx gltfjsx retroOne.glb
-npx gltfjsx retroThree.glb
-npx gltfjsx retroTwo.glb
-npx gltfjsx rollingDoorOne.glb
-npx gltfjsx rollingDoorThree.glb
-npx gltfjsx rollingDoorTwo.glb
-npx gltfjsx storeOne.glb
-npx gltfjsx storeTwo.glb
-npx gltfjsx whiteOne.glb
-npx gltfjsx whiteThree.glb
-npx gltfjsx whiteTwo.glb
+import Arcade from './Arcade'
+import BarOne from './BarOne'
+import BarTwo from './BarTwo'
+import ClassicOne from './ClassicOne'
+import ClassicThree from './ClassicThree'
+import ClassicTwo from './ClassicTwo'
+import Laundry from './Laundry'
+import RetroOne from './RetroOne'
+import RetroThree from './RetroThree'
+import RetroTwo from './RetroTwo'
+import RollingDoorOne from './RollingDoorOne'
+import RollingDoorThree from './RollingDoorThree'
+import RollingDoorTwo from './RollingDoorTwo'
+import StoreOne from './StoreOne'
+import StoreTwo from './StoreTwo'
+import WhiteOne from './WhiteOne'
+import WhiteThree from './WhiteThree'
+import WhiteTwo from './WhiteTwo'

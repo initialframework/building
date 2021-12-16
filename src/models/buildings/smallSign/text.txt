@@ -1,25 +1,25 @@
-npx gltfjsx adultStoreSign.glb
-npx gltfjsx artistAgencySign.glb
-npx gltfjsx bankSign.glb
-npx gltfjsx bikeShopSign.glb
-npx gltfjsx cameraStoreSign.glb
-npx gltfjsx comicStoreSign.glb
-npx gltfjsx dvdSign.glb
-npx gltfjsx fujifilmSign.glb
-npx gltfjsx gameShopSign.glb
-npx gltfjsx izakayaSign.glb
-npx gltfjsx javStoreSign.glb
-npx gltfjsx laundrySign.glb
-npx gltfjsx mcdSign.glb
-npx gltfjsx minimartSign.glb
-npx gltfjsx netcafeSign.glb
-npx gltfjsx playstationSign.glb
-npx gltfjsx ramenSign.glb
-npx gltfjsx segaSign.glb
-npx gltfjsx stationerySign.glb
-npx gltfjsx sushiBarSign.glb
-npx gltfjsx toysShopSign.glb
-npx gltfjsx travelAgencySign.glb
-npx gltfjsx udonSign.glb
-npx gltfjsx uniqloSign.glb
-npx gltfjsx yoshinoyaSign.glb
+import AdultStoreSign from './AdultStoreSign'
+import ArtistAgencySign from './ArtistAgencySign'
+import BankSign from './BankSign'
+import BikeShopSign from './BikeShopSign'
+import CameraStoreSign from './CameraStoreSign'
+import ComicStoreSign from './ComicStoreSign'
+import DvdSign from './DvdSign'
+import FujifilmSign from './FujifilmSign'
+import GameShopSign from './GameShopSign'
+import IzakayaSign from './IzakayaSign'
+import JavStoreSign from './JavStoreSign'
+import LaundrySign from './LaundrySign'
+import McdSign from './McdSign'
+import MinimartSign from './MinimartSign'
+import NetcafeSign from './NetcafeSign'
+import PlaystationSign from './PlaystationSign'
+import RamenSign from './RamenSign'
+import SegaSign from './SegaSign'
+import StationerySign from './StationerySign'
+import SushiBarSign from './SushiBarSign'
+import ToysShopSign from './ToysShopSign'
+import TravelAgencySign from './TravelAgencySign'
+import UdonSign from './UdonSign'
+import UniqloSign from './UniqloSign'
+import YoshinoyaSign from './YoshinoyaSign'

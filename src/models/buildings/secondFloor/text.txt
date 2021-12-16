@@ -1,17 +1,17 @@
-npx gltfjsx typeEight.glb
-npx gltfjsx typeEighteen.glb
-npx gltfjsx typeEleven.glb
-npx gltfjsx typeFive.glb
-npx gltfjsx typeFiveteen.glb
-npx gltfjsx typeFourteen.glb
-npx gltfjsx typeNine.glb
-npx gltfjsx typeOne.glb
-npx gltfjsx typeSeven.glb
-npx gltfjsx typeSeventeen.glb
-npx gltfjsx typeSix.glb
-npx gltfjsx typeSixteen.glb
-npx gltfjsx typeTen.glb
-npx gltfjsx typeThirteen.glb
-npx gltfjsx typeThree.glb
-npx gltfjsx typeTwelve.glb
-npx gltfjsx typeTwo.glb
+import TypeEight.js from './TypeEight.js'
+import TypeEighteen.js from './TypeEighteen.js'
+import TypeEleven.js from './TypeEleven.js'
+import TypeFive.js from './TypeFive.js'
+import TypeFiveteen.js from './TypeFiveteen.js'
+import TypeFourteen.js from './TypeFourteen.js'
+import TypeNine.js from './TypeNine.js'
+import TypeOne.js from './TypeOne.js'
+import TypeSeven.js from './TypeSeven.js'
+import TypeSeventeen.js from './TypeSeventeen.js'
+import TypeSix.js from './TypeSix.js'
+import TypeSixteen.js from './TypeSixteen.js'
+import TypeTen.js from './TypeTen.js'
+import TypeThirteen.js from './TypeThirteen.js'
+import TypeThree.js from './TypeThree.js'
+import TypeTwelve.js from './TypeTwelve.js'
+import TypeTwo.js from './TypeTwo.js'

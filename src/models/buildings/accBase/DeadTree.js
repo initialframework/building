@@ -7,7 +7,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function DeadTree({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/deadTree.glb");
+  const { nodes, materials } = useGLTF("/buildings/accBase/deadTree.glb");
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh
@@ -19,4 +19,4 @@ export default function DeadTree({ ...props }) {
   );
 }
 
-useGLTF.preload("/deadTree.glb");
+useGLTF.preload("/buildings/accBase/deadTree.glb");

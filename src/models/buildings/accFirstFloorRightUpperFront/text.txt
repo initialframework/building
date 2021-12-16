@@ -1,5 +1,7 @@
-npx gltfjsx condenserUnitTypeB.glb
-npx gltfjsx electricBox.glb
-npx gltfjsx lantern.glb
-npx gltfjsx lightBox.glb
-npx gltfjsx pipe.glb
+import AccFirstFloorRightUpperFront.js from './AccFirstFloorRightUpperFront.js'
+import CondenserUnitTypeB.js from './CondenserUnitTypeB.js'
+import ElectricBox.js from './ElectricBox.js'
+import Lantern.js from './Lantern.js'
+import LightBox.js from './LightBox.js'
+import Pipe.js from './Pipe.js'
+import text.txt from './text.txt'

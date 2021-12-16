@@ -1,5 +1,7 @@
-npx gltfjsx bike.glb
-npx gltfjsx cafeSignBoard.glb
-npx gltfjsx crate.glb
-npx gltfjsx mailbox.glb
-npx gltfjsx vendingMachine.glb
+import AccFirstFloorFrontLeft.js from './AccFirstFloorFrontLeft.js'
+import Bike.js from './Bike.js'
+import CafeSignBoard.js from './CafeSignBoard.js'
+import Crate.js from './Crate.js'
+import Mailbox.js from './Mailbox.js'
+import text.txt from './text.txt'
+import VendingMachine.js from './VendingMachine.js'

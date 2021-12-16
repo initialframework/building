@@ -7,7 +7,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function BarOne({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/barOne.glb");
+  const { nodes, materials } = useGLTF("/buildings/front/barOne.glb");
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh
@@ -20,4 +20,4 @@ export default function BarOne({ ...props }) {
   );
 }
 
-useGLTF.preload("/barOne.glb");
+useGLTF.preload("/buildings/front/barOne.glb");

@@ -2,26 +2,35 @@ import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Environment,
+  MeshReflectorMaterial,
   OrbitControls,
   PerspectiveCamera,
-  Reflector,
 } from "@react-three/drei";
-import {
-  Bloom,
-  EffectComposer,
-  SMAA,
-  ToneMapping,
-} from "@react-three/postprocessing";
-import { Resizer, KernelSize, BlendFunction } from "postprocessing";
+import { Bloom, EffectComposer, SMAA } from "@react-three/postprocessing";
+import { Resizer, KernelSize } from "postprocessing";
 import Fireflies from "./components/Fireflies";
-import BaseFive from "./models/buildings/base/BaseFive";
-import TypeEight from "./models/buildings/firstFloor/TypeEight";
-import TypeThirteen from "./models/buildings/secondFloor/TypeThirteen";
-import BarOne from "./models/buildings/front/BarOne";
-import Izakaya from "./models/buildings/mainSign/Izakaya";
-import IzakayaSign from "./models/buildings/smallSign/IzakayaSign";
-import LampFour from "./models/buildings/accBase/LampFour";
+import { useSelector } from "react-redux";
+import { fetchBuildingById } from "./app/buildingsSlice";
+import { useDispatch } from "react-redux";
+import Base from "./models/buildings/base/Base";
+import FirstFloor from "./models/buildings/firstFloor/FirstFloor";
+import { useParams } from "react-router-dom";
+
 function App() {
+  const url = useParams("id");
+  console.log(url);
+  const dispatch = useDispatch();
+  const buildingById = useSelector((state) => state.buildings.buildingById);
+  const buildingByIdStatus = useSelector(
+    (state) => state.buildings.buildingByIdStatus
+  );
+  console.log(buildingById);
+
+  // useEffect(() => {
+  //   if (buildingByIdStatus === "idle") {
+  //     dispatch(fetchBuildingById(url));
+  //   }
+  // }, [buildingByIdStatus,url , dispatch]);
   return (
     <Canvas
       dpr={window.devicePixelRatio}
@@ -33,6 +42,12 @@ function App() {
       <pointLight
         color={"#ff0040"}
         position={[3, 30, 3]}
+        intensity={1}
+        castShadow
+      />
+      <pointLight
+        color={"#ffffff"}
+        position={[0, 30, -20]}
         intensity={1}
         castShadow
       />
@@ -60,8 +75,7 @@ function App() {
       />
       <directionalLight
         color={"#ffff"}
-        // angle={Math.PI / 4}
-        intensity={0.3}
+        intensity={0.5}
         castShadow
         shadowCameraNear={1}
         shadowCameraFar={20}
@@ -72,55 +86,38 @@ function App() {
         shadowMapHeight={1024}
         shadowMapWidth={1024}
       />
-      <Suspense fallback={null}>
-        <group position={[0, 0, 0]}>
-          <mesh
-            rotation-x={-Math.PI / 2}
-            position={[0, 0.01, 0]}
-            scale={[2000, 2000, 2000]}
-            receiveShadow
-            renderOrder={1000}
-          >
-            <planeBufferGeometry attach="geometry" />
-            <shadowMaterial
-              attach="material"
-              transparent
-              color="#000"
-              opacity={0.5}
-            />
-          </mesh>
-          <Reflector
+      <group position={[0, 0, 0]}>
+        <mesh
+          rotation-x={-Math.PI / 2}
+          position={[0, 0.01, 0]}
+          scale={[2000, 2000, 2000]}
+          receiveShadow
+          renderOrder={2000}
+        >
+          <planeBufferGeometry attach="geometry" />
+          <shadowMaterial
+            attach="material"
+            transparent
+            color="#000"
+            opacity={0.5}
+          />
+          <MeshReflectorMaterial
+            blur={[400, 100]}
             resolution={1024}
-            mirror={0.5}
             mixBlur={1}
-            mixStrength={2}
+            mixStrength={3.5}
             depthScale={1}
             minDepthThreshold={1}
             maxDepthThreshold={1}
-            rotation-x={-Math.PI / 2}
-            args={[2000, 2000]}
-          >
-            {(Material, props) => (
-              <Material
-                {...props}
-                color="#3e86b2"
-                metalness={0}
-                roughness={0.5}
-              />
-            )}
-          </Reflector>
-        </group>
+            color="#131842"
+            metalness={0}
+            roughness={0.5}
+          />
+        </mesh>
+      </group>
+      <Suspense fallback={null}>
         <EffectComposer multisampling={0}>
-          {/* <SMAA /> */}
-          {/* <ToneMapping
-            blendFunction={BlendFunction.NORMAL}
-            adaptive={true}
-            resolution={256}
-            middleGrey={0.6}
-            maxLuminance={16.0}
-            averageLuminance={1.0}
-            adaptationRate={1.0}
-          /> */}
+          <SMAA />
           <group position={[0, 5, 0]}>
             <Fireflies count={50} />
           </group>
@@ -133,14 +130,8 @@ function App() {
             luminanceThreshold={0.7}
             luminanceSmoothing={0.2}
           />
-
-          <BaseFive />
-          <TypeEight />
-          <BarOne />
-          <TypeThirteen />
-          <Izakaya />
-          {/* <IzakayaSign /> */}
-          <LampFour />
+          <Base value={buildingById.attributes[0].models} />
+          <FirstFloor value={"TypeSeven"} />
         </EffectComposer>
       </Suspense>
       <OrbitControls enableZoom={true} enablePan={true} />

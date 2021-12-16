@@ -1,30 +1,32 @@
-npx gltfjsx bigFence.glb
-npx gltfjsx cones.glb
-npx gltfjsx deadTree.glb
-npx gltfjsx lampFour.glb
-npx gltfjsx lampOne.glb
-npx gltfjsx lampPoleOne.glb
-npx gltfjsx lampThree.glb
-npx gltfjsx lampTwo.glb
-npx gltfjsx noParkingSign.glb
-npx gltfjsx poleEight.glb
-npx gltfjsx poleEleven.glb
-npx gltfjsx poleFive.glb
-npx gltfjsx poleFour.glb
-npx gltfjsx poleNine.glb
-npx gltfjsx poleOne.glb
-npx gltfjsx poleSeven.glb
-npx gltfjsx poleSix.glb
-npx gltfjsx poleTen.glb
-npx gltfjsx poleThree.glb
-npx gltfjsx poleTwelve.glb
-npx gltfjsx poleTwo.glb
-npx gltfjsx signPoleOne.glb
-npx gltfjsx smallFence.glb
-npx gltfjsx squareSign.glb
-npx gltfjsx taxiSign.glb
-npx gltfjsx trafficLightOne.glb
-npx gltfjsx trafficLightTwo.glb
-npx gltfjsx treeOne.glb
-npx gltfjsx treeTwo.glb
-npx gltfjsx woodenFence.glb
+import AccBase.js from './AccBase.js'
+import BigFence.js from './BigFence.js'
+import Cones.js from './Cones.js'
+import DeadTree.js from './DeadTree.js'
+import LampFour.js from './LampFour.js'
+import LampOne.js from './LampOne.js'
+import LampPoleOne.js from './LampPoleOne.js'
+import LampThree.js from './LampThree.js'
+import LampTwo.js from './LampTwo.js'
+import NoParkingSign.js from './NoParkingSign.js'
+import PoleEight.js from './PoleEight.js'
+import PoleEleven.js from './PoleEleven.js'
+import PoleFive.js from './PoleFive.js'
+import PoleFour.js from './PoleFour.js'
+import PoleNine.js from './PoleNine.js'
+import PoleOne.js from './PoleOne.js'
+import PoleSeven.js from './PoleSeven.js'
+import PoleSix.js from './PoleSix.js'
+import PoleTen.js from './PoleTen.js'
+import PoleThree.js from './PoleThree.js'
+import PoleTwelve.js from './PoleTwelve.js'
+import PoleTwo.js from './PoleTwo.js'
+import SignPoleOne.js from './SignPoleOne.js'
+import SmallFence.js from './SmallFence.js'
+import SquareSign.js from './SquareSign.js'
+import TaxiSign.js from './TaxiSign.js'
+import text.txt from './text.txt'
+import TrafficLightOne.js from './TrafficLightOne.js'
+import TrafficLightTwo.js from './TrafficLightTwo.js'
+import TreeOne.js from './TreeOne.js'
+import TreeTwo.js from './TreeTwo.js'
+import WoodenFence.js from './WoodenFence.js'

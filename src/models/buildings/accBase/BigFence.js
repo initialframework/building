@@ -7,7 +7,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function BigFence({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/bigFence.glb");
+  const { nodes, materials } = useGLTF("/buildings/accBase/bigFence.glb");
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh
@@ -19,4 +19,4 @@ export default function BigFence({ ...props }) {
   );
 }
 
-useGLTF.preload("/bigFence.glb");
+useGLTF.preload("/buildings/accBase/bigFence.glb");

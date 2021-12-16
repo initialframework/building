@@ -1,5 +1,7 @@
-npx gltfjsx bigElectricBox.glb
-npx gltfjsx compoundElectricBox.glb
-npx gltfjsx condenserUnitTypeA.glb
-npx gltfjsx condenserUnitTypeD.glb
-npx gltfjsx kitchenVent.glb
+import AccFirstFloorRightUpperBack.js from './AccFirstFloorRightUpperBack.js'
+import BigElectricBox.js from './BigElectricBox.js'
+import CompoundElectricBox.js from './CompoundElectricBox.js'
+import CondenserUnitTypeA.js from './CondenserUnitTypeA.js'
+import CondenserUnitTypeD.js from './CondenserUnitTypeD.js'
+import KitchenVent.js from './KitchenVent.js'
+import text.txt from './text.txt'

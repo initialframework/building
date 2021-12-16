@@ -1,5 +1,7 @@
-npx gltfjsx blueTrashBin.glb
-npx gltfjsx poster.glb
-npx gltfjsx smallVendingMachine.glb
-npx gltfjsx vendingMachine.glb
-npx gltfjsx woodenBox.glb
+import AccFirstFloorRightLowerFront.js from './AccFirstFloorRightLowerFront.js'
+import BlueTrashBin.js from './BlueTrashBin.js'
+import Poster.js from './Poster.js'
+import SmallVendingMachine.js from './SmallVendingMachine.js'
+import text.txt from './text.txt'
+import VendingMachine.js from './VendingMachine.js'
+import WoodenBox.js from './WoodenBox.js'

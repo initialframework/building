@@ -1,5 +1,7 @@
-npx gltfjsx condenserUnitTypeABackRightFloorTwo.glb
-npx gltfjsx condenserUnitTypeBBackRightFloorTwo.glb
-npx gltfjsx condenserUnitTypeCBackRightFloorTwo.glb
-npx gltfjsx condenserUnitTypeDBackRightFloorTwo.glb
-npx gltfjsx wallVentBackRightFloorTwo.glb
+import AccSecondFloorBackRight.js from './AccSecondFloorBackRight.js'
+import CondenserUnitTypeABackRightFloorTwo.js from './CondenserUnitTypeABackRightFloorTwo.js'
+import CondenserUnitTypeBBackRightFloorTwo.js from './CondenserUnitTypeBBackRightFloorTwo.js'
+import CondenserUnitTypeCBackRightFloorTwo.js from './CondenserUnitTypeCBackRightFloorTwo.js'
+import CondenserUnitTypeDBackRightFloorTwo.js from './CondenserUnitTypeDBackRightFloorTwo.js'
+import text.txt from './text.txt'
+import WallVentBackRightFloorTwo.js from './WallVentBackRightFloorTwo.js'

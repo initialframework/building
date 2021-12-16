@@ -1,6 +1,7 @@
-npx gltfjsx baseFive.glb
-npx gltfjsx baseFour.glb
-npx gltfjsx baseOne.glb
-npx gltfjsx baseSix.glb
-npx gltfjsx baseThree.glb
-npx gltfjsx baseTwo.glb
+import Base from './Base'
+import BaseFive from './BaseFive'
+import BaseFour from './BaseFour'
+import BaseOne from './BaseOne'
+import BaseSix from './BaseSix'
+import BaseThree from './BaseThree'
+import BaseTwo from './BaseTwo'

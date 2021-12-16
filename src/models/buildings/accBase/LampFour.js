@@ -7,7 +7,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function LampFour({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/lampFour.glb");
+  const { nodes, materials } = useGLTF("/buildings/accBase/lampFour.glb");
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
@@ -26,4 +26,4 @@ export default function LampFour({ ...props }) {
   );
 }
 
-useGLTF.preload("/lampFour.glb");
+useGLTF.preload("/buildings/accBase/lampFour.glb");

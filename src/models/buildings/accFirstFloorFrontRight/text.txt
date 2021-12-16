@@ -1,5 +1,7 @@
-npx gltfjsx bonsai.glb
-npx gltfjsx condenserUnit.glb
-npx gltfjsx crate.glb
-npx gltfjsx gachaponMachine.glb
-npx gltfjsx mailbox.glb
+import AccFirstFloorFrontRight.js from './AccFirstFloorFrontRight.js'
+import Bonsai.js from './Bonsai.js'
+import CondenserUnit.js from './CondenserUnit.js'
+import Crate.js from './Crate.js'
+import GachaponMachine.js from './GachaponMachine.js'
+import Mailbox.js from './Mailbox.js'
+import text.txt from './text.txt'

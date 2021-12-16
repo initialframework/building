@@ -1,5 +1,7 @@
-npx gltfjsx bike.glb
-npx gltfjsx bottles.glb
-npx gltfjsx crate.glb
-npx gltfjsx greenTrashBin.glb
-npx gltfjsx trashBinWithCat.glb
+import AccFirstFloorRightLowerBack.js from './AccFirstFloorRightLowerBack.js'
+import Bike.js from './Bike.js'
+import Bottles.js from './Bottles.js'
+import Crate.js from './Crate.js'
+import GreenTrashBin.js from './GreenTrashBin.js'
+import text.txt from './text.txt'
+import TrashBinWithCat.js from './TrashBinWithCat.js'

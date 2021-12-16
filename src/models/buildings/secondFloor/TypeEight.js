@@ -7,7 +7,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function TypeEight({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/typeEight.glb");
+  const { nodes, materials } = useGLTF("/buildings/secondFloor/typeEight.glb");
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
@@ -28,4 +28,4 @@ export default function TypeEight({ ...props }) {
   );
 }
 
-useGLTF.preload("/typeEight.glb");
+useGLTF.preload("/buildings/secondFloor/typeEight.glb");

@@ -1,18 +1,19 @@
-npx gltfjsx typeEight.glb
-npx gltfjsx typeEighteen.glb
-npx gltfjsx typeEleven.glb
-npx gltfjsx typeFive.glb
-npx gltfjsx typeFiveteen.glb
-npx gltfjsx typeFour.glb
-npx gltfjsx typeFourteen.glb
-npx gltfjsx typeNine.glb
-npx gltfjsx typeOne.glb
-npx gltfjsx typeSeven.glb
-npx gltfjsx typeSeventeen.glb
-npx gltfjsx typeSix.glb
-npx gltfjsx typeSixteen.glb
-npx gltfjsx typeTen.glb
-npx gltfjsx typeThirteen.glb
-npx gltfjsx typeThree.glb
-npx gltfjsx TypeTwelve.glb
-npx gltfjsx typeTwo.glb
+import FirstFloor from './FirstFloor'
+import TypeEight from './TypeEight'
+import TypeEighteen from './TypeEighteen'
+import TypeEleven from './TypeEleven'
+import TypeFive from './TypeFive'
+import TypeFiveteen from './TypeFiveteen'
+import TypeFour from './TypeFour'
+import TypeFourteen from './TypeFourteen'
+import TypeNine from './TypeNine'
+import TypeOne from './TypeOne'
+import TypeSeven from './TypeSeven'
+import TypeSeventeen from './TypeSeventeen'
+import TypeSix from './TypeSix'
+import TypeSixteen from './TypeSixteen'
+import TypeTen from './TypeTen'
+import TypeThirteen from './TypeThirteen'
+import TypeThree from './TypeThree'
+import TypeTwelve from './TypeTwelve'
+import TypeTwo from './TypeTwo'

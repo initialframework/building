@@ -1,25 +1,25 @@
-npx gltfjsx adultStore.glb
-npx gltfjsx artistAgency.glb
-npx gltfjsx bank.glb
-npx gltfjsx bikeShop.glb
-npx gltfjsx cameraStore.glb
-npx gltfjsx dvd.glb
-npx gltfjsx fujifilm.glb
-npx gltfjsx gameShop.glb
-npx gltfjsx izakaya.glb
-npx gltfjsx javStore.glb
-npx gltfjsx laundry.glb
-npx gltfjsx mcd.glb
-npx gltfjsx minimart.glb
-npx gltfjsx netCafe.glb
-npx gltfjsx playstation.glb
-npx gltfjsx ramen.glb
-npx gltfjsx rollingDoor.glb
-npx gltfjsx sega.glb
-npx gltfjsx stationery.glb
-npx gltfjsx sushiBar.glb
-npx gltfjsx toysShop.glb
-npx gltfjsx travelAgency.glb
-npx gltfjsx udon.glb
-npx gltfjsx uniqlo.glb
-npx gltfjsx yoshinoya.glb
+import AdultStore from './AdultStore'
+import ArtistAgency from './ArtistAgency'
+import Bank from './Bank'
+import BikeShop from './BikeShop'
+import CameraStore from './CameraStore'
+import Dvd from './Dvd'
+import Fujifilm from './Fujifilm'
+import GameShop from './GameShop'
+import Izakaya from './Izakaya'
+import JavStore from './JavStore'
+import Laundry from './Laundry'
+import Mcd from './Mcd'
+import Minimart from './Minimart'
+import NetCafe from './NetCafe'
+import Playstation from './Playstation'
+import Ramen from './Ramen'
+import RollingDoor from './RollingDoor'
+import Sega from './Sega'
+import Stationery from './Stationery'
+import SushiBar from './SushiBar'
+import ToysShop from './ToysShop'
+import TravelAgency from './TravelAgency'
+import Udon from './Udon'
+import Uniqlo from './Uniqlo'
+import Yoshinoya from './Yoshinoya'

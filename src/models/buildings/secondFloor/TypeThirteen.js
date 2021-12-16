@@ -7,7 +7,9 @@ import { useGLTF } from "@react-three/drei";
 
 export default function Model({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/typeThirteen.glb");
+  const { nodes, materials } = useGLTF(
+    "/buildings/secondFloor/typeThirteen.glb"
+  );
   // console.log(materials);
   materials.biru.emissive.r = 1;
   materials.biru.emissive.g = 1;
@@ -28,4 +30,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/typeThirteen.glb");
+useGLTF.preload("/buildings/secondFloor/typeThirteen.glb");
