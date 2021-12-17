@@ -1,5 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 // import { supabase } from "../supabase";
+import { Data } from "./dummyData";
 
 const initialState = {
   buildingById: {
@@ -94,6 +95,8 @@ export const fetchBuildingByUrl = createAsyncThunk(
   async (id) => {
     // const response = await supabase.from("buildings").select("*").eq("id", id);
     // return response;
+    const response = Data.find((dat) => dat.id === id);
+    return response;
   }
 );
 
@@ -101,7 +104,7 @@ const buildingsSlice = createSlice({
   name: "buildings",
   initialState,
   reducers: {
-    clearBuildingByIdStatus: (state) => {
+    clearBuildingByUrlStatus: (state) => {
       state.buildingByIdStatus = "idle";
     },
   },
@@ -111,7 +114,7 @@ const buildingsSlice = createSlice({
     },
     [fetchBuildingByUrl.fulfilled]: (state, action) => {
       state.buildingByIdStatus = "succeeded";
-      state.buildingById = action.payload.data[0];
+      state.buildingById = action.payload;
     },
     [fetchBuildingByUrl.rejected]: (state, action) => {
       state.buildingByIdStatus = "failed";
@@ -120,6 +123,6 @@ const buildingsSlice = createSlice({
   },
 });
 
-export const { clearBuildingByIdData } = buildingsSlice.actions;
+export const { clearBuildingByUrlData } = buildingsSlice.actions;
 
 export default buildingsSlice.reducer;

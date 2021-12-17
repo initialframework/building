@@ -1,11 +1,10 @@
 import React from "react";
-import FirstFloor from "./FirstFloor";
 import TypeEight from "./TypeEight";
 import TypeEighteen from "./TypeEighteen";
 import TypeEleven from "./TypeEleven";
 import TypeFive from "./TypeFive";
 import TypeFiveteen from "./TypeFiveteen";
-import TypeFour from "./TypeFour";
+// import TypeFour from "./TypeFour";
 import TypeFourteen from "./TypeFourteen";
 import TypeNine from "./TypeNine";
 import TypeOne from "./TypeOne";
@@ -22,9 +21,6 @@ import TypeTwo from "./TypeTwo";
 function SecondFloor({ value }) {
   let secondFloor = <TypeFourteen />;
   switch (value) {
-    case "FirstFloor":
-      secondFloor = <FirstFloor />;
-      break;
     case "TypeEight":
       secondFloor = <TypeEight />;
       break;
@@ -37,9 +33,9 @@ function SecondFloor({ value }) {
     case "TypeFive":
       secondFloor = <TypeFive />;
       break;
-    case "TypeFour":
-      secondFloor = <TypeFour />;
-      break;
+    // case "TypeFour":
+    //   secondFloor = <TypeFour />;
+    //   break;
     case "TypeFourteen":
       secondFloor = <TypeFourteen />;
       break;

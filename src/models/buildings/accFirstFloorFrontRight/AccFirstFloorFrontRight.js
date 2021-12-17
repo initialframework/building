@@ -5,7 +5,7 @@ import Crate from "./Crate";
 import GachaponMachine from "./GachaponMachine";
 import Mailbox from "./Mailbox";
 
-function AccFirstFloorFrontRight() {
+function AccFirstFloorFrontRight({ value }) {
   let accFirstFloorFrontRight = <Bonsai />;
   switch (value) {
     case "Bonsai":
