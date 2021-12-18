@@ -36,22 +36,18 @@ import SmallSign from "./models/buildings/smallSign/SmallSign";
 
 function CanvasJS() {
   let url = useParams("id");
-
   url = url.id;
-  console.log(url);
   const dispatch = useDispatch();
-  const buildingById = useSelector((state) => state.buildings.buildingById);
-  const buildingByIdStatus = useSelector(
-    (state) => state.buildings.buildingByIdStatus
+  let buildingByUrl = useSelector((state) => state.buildings.buildingByUrl);
+  const buildingByUrlStatus = useSelector(
+    (state) => state.buildings.buildingByUrlStatus
   );
-  console.log(Data);
-  console.log(buildingById);
 
   useEffect(() => {
-    if (buildingByIdStatus === "idle") {
+    if (buildingByUrlStatus === "idle") {
       dispatch(fetchBuildingByUrl(url));
     }
-  }, [buildingByIdStatus, dispatch, url]);
+  }, [buildingByUrlStatus, dispatch, url]);
 
   return (
     <React.Fragment>
@@ -153,41 +149,47 @@ castShadow
               luminanceThreshold={0.7}
               luminanceSmoothing={0.2}
             />
-            <Base value={buildingById.attributes[0].value} />
-            <AccBase value={buildingById.attributes[1].value} />
-            <FirstFloor value={buildingById.attributes[2].value} />
-            <AccFirstFloorFrontLeft value={buildingById.attributes[3].value} />
-            <AccFirstFloorFrontRight value={buildingById.attributes[4].value} />
+            <Base value={buildingByUrl.attributes[0].value} />
+            <AccBase value={buildingByUrl.attributes[1].value} />
+            <FirstFloor value={buildingByUrl.attributes[2].value} />
+            <AccFirstFloorFrontLeft value={buildingByUrl.attributes[3].value} />
+            <AccFirstFloorFrontRight
+              value={buildingByUrl.attributes[4].value}
+            />
             <AccFirstFloorRightLowerBack
-              value={buildingById.attributes[5].value}
+              value={buildingByUrl.attributes[5].value}
             />
             <AccFirstFloorRightLowerFront
-              value={buildingById.attributes[6].value}
+              value={buildingByUrl.attributes[6].value}
             />
             <AccFirstFloorRightUpperBack
-              value={buildingById.attributes[7].value}
+              value={buildingByUrl.attributes[7].value}
             />
             <AccFirstFloorRightUpperFront
-              value={buildingById.attributes[8].value}
+              value={buildingByUrl.attributes[8].value}
             />
-            <SecondFloor value={buildingById.attributes[9].value} />
-            <AccSecondFloorBackLeft value={buildingById.attributes[10].value} />
+            <SecondFloor value={buildingByUrl.attributes[9].value} />
+            <AccSecondFloorBackLeft
+              value={buildingByUrl.attributes[10].value}
+            />
             <AccSecondFloorBackRight
-              value={buildingById.attributes[11].value}
+              value={buildingByUrl.attributes[11].value}
             />
-            <AccSecondFloorLeftBack value={buildingById.attributes[12].value} />
+            <AccSecondFloorLeftBack
+              value={buildingByUrl.attributes[12].value}
+            />
             <AccSecondFloorLeftFront
-              value={buildingById.attributes[13].value}
+              value={buildingByUrl.attributes[13].value}
             />
             <AccSecondFloorRightBack
-              value={buildingById.attributes[14].value}
+              value={buildingByUrl.attributes[14].value}
             />
             <AccSecondFloorRightFront
-              value={buildingById.attributes[15].value}
+              value={buildingByUrl.attributes[15].value}
             />
-            <Front value={buildingById.attributes[16].value} />
-            <MainSign value={buildingById.attributes[17].value} />
-            <SmallSign value={buildingById.attributes[18].value} />
+            <Front value={buildingByUrl.attributes[16].value} />
+            <MainSign value={buildingByUrl.attributes[17].value} />
+            <SmallSign value={buildingByUrl.attributes[18].value} />
           </EffectComposer>
         </Suspense>
         <OrbitControls enableZoom={true} enablePan={true} />

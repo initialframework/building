@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { Data } from "./dummyData";
 
 const initialState = {
-  buildingById: {
+  buildingByUrl: {
     name: "voxal-one",
     description: "Voxel metaverse",
     image: "api.voxel/1",
@@ -86,8 +86,8 @@ const initialState = {
       },
     ],
   },
-  buildingByIdStatus: "idle",
-  buildingByIdError: null,
+  buildingByUrlStatus: "idle",
+  buildingByUrlError: null,
 };
 
 console.log("below is data");
@@ -100,7 +100,7 @@ export const fetchBuildingByUrl = createAsyncThunk(
   async (id) => {
     // const response = await supabase.from("buildings").select("*").eq("id", id);
     // return response;
-    const response = dummy.find((dat) => dat.id === id);
+    const response = dummy.find(({ dat }) => id === id);
     console.log("below is response : ");
     console.log(response);
     return response;
@@ -112,20 +112,20 @@ const buildingsSlice = createSlice({
   initialState,
   reducers: {
     clearBuildingByUrlStatus: (state) => {
-      state.buildingByIdStatus = "idle";
+      state.buildingByUrlStatus = "idle";
     },
   },
   extraReducers: {
     [fetchBuildingByUrl.pending]: (state) => {
-      state.buildingByIdStatus = "loading";
+      state.buildingByUrlStatus = "loading";
     },
     [fetchBuildingByUrl.fulfilled]: (state, action) => {
-      state.buildingByIdStatus = "succeeded";
-      state.buildingById = action.payload;
+      state.buildingByUrlStatus = "succeeded";
+      state.buildingByUrl = action.payload;
     },
     [fetchBuildingByUrl.rejected]: (state, action) => {
-      state.buildingByIdStatus = "failed";
-      state.buildingByIdError = action.error.message;
+      state.buildingByUrlStatus = "failed";
+      state.buildingByUrlError = action.error.message;
     },
   },
 });
