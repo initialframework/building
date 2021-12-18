@@ -35,8 +35,10 @@ import MainSign from "./models/buildings/mainSign/MainSign";
 import SmallSign from "./models/buildings/smallSign/SmallSign";
 
 function CanvasJS() {
-  const url = useParams("id");
-  console.log(url.id);
+  let url = useParams("id");
+
+  url = url.id;
+  console.log(url);
   const dispatch = useDispatch();
   const buildingById = useSelector((state) => state.buildings.buildingById);
   const buildingByIdStatus = useSelector(
@@ -47,7 +49,7 @@ function CanvasJS() {
 
   useEffect(() => {
     if (buildingByIdStatus === "idle") {
-      dispatch(fetchBuildingByUrl(url.id));
+      dispatch(fetchBuildingByUrl(url));
     }
   }, [buildingByIdStatus, dispatch, url]);
 

@@ -96,6 +96,8 @@ export const fetchBuildingByUrl = createAsyncThunk(
     // const response = await supabase.from("buildings").select("*").eq("id", id);
     // return response;
     const response = Data.find((dat) => dat.id === id);
+    console.log("below is response : ");
+    console.log(response);
     return response;
   }
 );
