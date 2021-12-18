@@ -13,6 +13,7 @@ export default function Model({ ...props }) {
   return (
     <group ref={group} {...props} dispose={null}>
       <mesh
+        castShadow
         geometry={nodes.ObjObject.geometry}
         material={materials.palette}
         rotation={[Math.PI / 2, 0, 0]}

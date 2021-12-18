@@ -13,15 +13,21 @@ export default function TypeSix({ ...props }) {
       <group rotation={[Math.PI / 2, 0, 0]}>
         <mesh
           castShadow
+          castShadow
           geometry={nodes.ObjObject_1.geometry}
           material={materials.palette}
         />
         <mesh
           castShadow
+          castShadow
           geometry={nodes.ObjObject_2.geometry}
           material={materials.putih}
         />
-        <mesh geometry={nodes.ObjObject_3.geometry} material={materials.biru} />
+        <mesh
+          castShadow
+          geometry={nodes.ObjObject_3.geometry}
+          material={materials.biru}
+        />
       </group>
     </group>
   );

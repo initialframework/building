@@ -65,22 +65,22 @@ position={[3, 30, 3]}
 intensity={1}
 castShadow
 /> */}
+        <pointLight
+          color={"#ffffff"}
+          position={[0, 7, 0]}
+          intensity={1}
+          castShadow
+        />
         {/* <pointLight
-color={"#ffffff"}
-position={[0, 30, -20]}
-intensity={1}
-castShadow
-/> */}
-        {/* <pointLight
-color={"#ff0040"}
-position={[0, 20, 0]}
-intensity={2}
-penumbra={0.2}
-decay={2}
-distance={200}
-castShadow
-/> */}
-        <spotLight
+          color={"#ff0040"}
+          position={[0, 20, 0]}
+          intensity={1}
+          penumbra={0.2}
+          decay={2}
+          distance={200}
+          castShadow
+        /> */}
+        {/* <spotLight
           castShadow
           angle={Math.PI / 4}
           position={[15, 40, 35]}
@@ -92,8 +92,8 @@ castShadow
           shadowCameraFar={200}
           shadowMapHeight={512}
           shadowMapWidth={512}
-        />
-        <directionalLight
+        /> */}
+        {/* <directionalLight
           color={"#ffff"}
           intensity={0.5}
           castShadow
@@ -105,23 +105,23 @@ castShadow
           shadowCameraBottom={-15}
           shadowMapHeight={1024}
           shadowMapWidth={1024}
-        />
+        /> */}
         <group position={[0, 0, 0]}>
           <mesh
             rotation-x={-Math.PI / 2}
             position={[0, 0.01, 0]}
-            scale={[2000, 2000, 2000]}
+            scale={[50, 50, 50]}
             receiveShadow
-            renderOrder={2000}
+            renderOrder={200}
           >
             <planeBufferGeometry attach="geometry" />
             <shadowMaterial
               attach="material"
               transparent
-              color="#000"
-              opacity={0.5}
+              color="#131842"
+              opacity={1}
             />
-            <MeshReflectorMaterial
+            {/* <MeshReflectorMaterial
               blur={[400, 100]}
               resolution={1024}
               mixBlur={1}
@@ -130,15 +130,15 @@ castShadow
               minDepthThreshold={1}
               maxDepthThreshold={1}
               color="#131842"
-              metalness={0}
+              metalness={5}
               roughness={0.5}
-            />
+            /> */}
           </mesh>
         </group>
         <Suspense fallback={null}>
           <EffectComposer multisampling={0}>
             <SMAA />
-            <group position={[0, 5, 0]}>
+            <group position={[0, 10, 0]}>
               <Fireflies count={50} />
             </group>
             <Environment files="satara_night_no_lamps_4k.hdr" />

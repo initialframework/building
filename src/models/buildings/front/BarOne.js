@@ -12,6 +12,7 @@ export default function BarOne({ ...props }) {
     <group ref={group} {...props} dispose={null}>
       <mesh
         castShadow
+        castShadow
         geometry={nodes.ObjObject.geometry}
         material={materials.palette}
         rotation={[Math.PI / 2, 0, 0]}

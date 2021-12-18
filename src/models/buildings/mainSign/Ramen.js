@@ -12,11 +12,17 @@ export default function Model({ ...props }) {
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
         <mesh
+          castShadow
           geometry={nodes.ObjObject_1.geometry}
           material={materials.palette}
         />
-        <mesh geometry={nodes.ObjObject_2.geometry} material={materials.pink} />
         <mesh
+          castShadow
+          geometry={nodes.ObjObject_2.geometry}
+          material={materials.pink}
+        />
+        <mesh
+          castShadow
           geometry={nodes.ObjObject_3.geometry}
           material={materials.yellow}
         />

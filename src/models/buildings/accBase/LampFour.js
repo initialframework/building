@@ -13,10 +13,12 @@ export default function LampFour({ ...props }) {
       <group rotation={[Math.PI / 2, 0, 0]}>
         <mesh
           castShadow
+          castShadow
           geometry={nodes.ObjObject_1.geometry}
           material={materials.palette}
         />
         <mesh
+          castShadow
           castShadow
           geometry={nodes.ObjObject_2.geometry}
           material={materials.putih}
