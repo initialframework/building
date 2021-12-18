@@ -37,6 +37,7 @@ import SmallSign from "./models/buildings/smallSign/SmallSign";
 function CanvasJS() {
   let url = useParams("id");
   url = url.id;
+  console.log(url);
   const dispatch = useDispatch();
   let buildingByUrl = useSelector((state) => state.buildings.buildingByUrl);
   const buildingByUrlStatus = useSelector(

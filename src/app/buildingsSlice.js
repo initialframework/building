@@ -97,10 +97,8 @@ const dummy = Data;
 
 export const fetchBuildingByUrl = createAsyncThunk(
   "buildings/fetchBuildingByUrl",
-  async (id) => {
-    // const response = await supabase.from("buildings").select("*").eq("id", id);
-    // return response;
-    const response = dummy.find(({ dat }) => id === id);
+  async (data) => {
+    const response = dummy.find(({ id }) => id === data);
     console.log("below is response : ");
     console.log(response);
     return response;
