@@ -43,6 +43,7 @@ function CanvasJS() {
     (state) => state.buildings.buildingByIdStatus
   );
   console.log(Data);
+  console.log(buildingById);
 
   useEffect(() => {
     if (buildingByIdStatus === "idle") {
