@@ -90,12 +90,17 @@ const initialState = {
   buildingByIdError: null,
 };
 
+console.log("below is data");
+console.log(Data);
+
+const dummy = Data;
+
 export const fetchBuildingByUrl = createAsyncThunk(
   "buildings/fetchBuildingByUrl",
   async (id) => {
     // const response = await supabase.from("buildings").select("*").eq("id", id);
     // return response;
-    const response = Data.find((dat) => dat.id === id);
+    const response = dummy.find((dat) => dat.id === id);
     console.log("below is response : ");
     console.log(response);
     return response;
