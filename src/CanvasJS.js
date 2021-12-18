@@ -1,6 +1,5 @@
 import React, { Suspense, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Data } from "./app/dummyData";
 import { Canvas } from "@react-three/fiber";
 import {
   Environment,
@@ -33,42 +32,42 @@ import AccSecondFloorRightFront from "./models/buildings/accSecondFloorRightFron
 import Front from "./models/buildings/front/Front";
 import MainSign from "./models/buildings/mainSign/MainSign";
 import SmallSign from "./models/buildings/smallSign/SmallSign";
+import { Data } from "./app/dummyData";
 
 function CanvasJS() {
-  let url = useParams("id");
-  url = url.id;
-  console.log(url);
-  const dispatch = useDispatch();
-  let buildingByUrl = useSelector((state) => state.buildings.buildingByUrl);
-  const buildingByUrlStatus = useSelector(
-    (state) => state.buildings.buildingByUrlStatus
-  );
+  let url = useParams().id;
+  const buildingByUrl = Data.find(({ id }) => id === url);
+  // const dispatch = useDispatch();
+  // const buildingByUrl = useSelector((state) => state.buildings.buildingByUrl);
+  // const buildingByUrlStatus = useSelector(
+  //   (state) => state.buildings.buildingByUrlStatus
+  // );
 
-  useEffect(() => {
-    if (buildingByUrlStatus === "idle") {
-      dispatch(fetchBuildingByUrl(url));
-    }
-  }, [buildingByUrlStatus, dispatch, url]);
+  // useEffect(() => {
+  //   if (buildingByUrlStatus === "idle") {
+  //     dispatch(fetchBuildingByUrl(url));
+  //   }
+  // }, [buildingByUrlStatus, dispatch, url]);
 
   return (
     <React.Fragment>
       <Canvas
         dpr={window.devicePixelRatio}
         shadows
-        camera={{ position: [-20, 20, 20] }}
+        camera={{ position: [0, 18, 20] }}
       >
         <color attach="background" args={["#050405"]} />
         <ambientLight color={"#ffff"} intensity={0.2} />
         {/* <pointLight
-color={"#ff0040"}
-position={[3, 30, 3]}
-intensity={1}
-castShadow
-/> */}
+          color={"#ff0040"}
+          position={[3, 30, 3]}
+          intensity={0.5}
+          castShadow
+        /> */}
         <pointLight
           color={"#ffffff"}
           position={[0, 7, 0]}
-          intensity={1}
+          intensity={0.7}
           castShadow
         />
         {/* <pointLight
@@ -80,7 +79,7 @@ castShadow
           distance={200}
           castShadow
         /> */}
-        {/* <spotLight
+        <spotLight
           castShadow
           angle={Math.PI / 4}
           position={[15, 40, 35]}
@@ -92,8 +91,8 @@ castShadow
           shadowCameraFar={200}
           shadowMapHeight={512}
           shadowMapWidth={512}
-        /> */}
-        {/* <directionalLight
+        />
+        <directionalLight
           color={"#ffff"}
           intensity={0.5}
           castShadow
@@ -105,12 +104,12 @@ castShadow
           shadowCameraBottom={-15}
           shadowMapHeight={1024}
           shadowMapWidth={1024}
-        /> */}
+        />
         <group position={[0, 0, 0]}>
           <mesh
             rotation-x={-Math.PI / 2}
             position={[0, 0.01, 0]}
-            scale={[50, 50, 50]}
+            scale={[1000, 50, 1000]}
             receiveShadow
             renderOrder={200}
           >
@@ -118,11 +117,11 @@ castShadow
             <shadowMaterial
               attach="material"
               transparent
-              color="#131842"
+              color="#000"
               opacity={1}
             />
-            {/* <MeshReflectorMaterial
-              blur={[400, 100]}
+            <MeshReflectorMaterial
+              blur={[100, 100]}
               resolution={1024}
               mixBlur={1}
               mixStrength={3.5}
@@ -130,9 +129,9 @@ castShadow
               minDepthThreshold={1}
               maxDepthThreshold={1}
               color="#131842"
-              metalness={5}
+              metalness={0}
               roughness={0.5}
-            /> */}
+            />
           </mesh>
         </group>
         <Suspense fallback={null}>

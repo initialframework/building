@@ -90,17 +90,12 @@ const initialState = {
   buildingByUrlError: null,
 };
 
-console.log("below is data");
-console.log(Data);
-
 const dummy = Data;
 
 export const fetchBuildingByUrl = createAsyncThunk(
   "buildings/fetchBuildingByUrl",
   async (data) => {
     const response = dummy.find(({ id }) => id === data);
-    console.log("below is response : ");
-    console.log(response);
     return response;
   }
 );

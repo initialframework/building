@@ -76,7 +76,7 @@ export const Data = [
       },
       {
         trait_type: "smallSing",
-        value: "MinimartSign",
+        value: "DvdSign",
       },
     ],
   },
@@ -157,7 +157,7 @@ export const Data = [
       },
       {
         trait_type: "smallSing",
-        value: "IzakayaSign",
+        value: "LaundrySign",
       },
     ],
   },
@@ -238,7 +238,7 @@ export const Data = [
       },
       {
         trait_type: "smallSing",
-        value: "PlaystationSign",
+        value: "McdSign",
       },
     ],
   },
@@ -319,7 +319,7 @@ export const Data = [
       },
       {
         trait_type: "smallSing",
-        value: "StationerySign",
+        value: "JavStoreSign",
       },
     ],
   },
@@ -400,7 +400,7 @@ export const Data = [
       },
       {
         trait_type: "smallSing",
-        value: "SegaSign",
+        value: "AdultStoreSign",
       },
     ],
   },
@@ -481,7 +481,7 @@ export const Data = [
       },
       {
         trait_type: "smallSing",
-        value: "CameraStoreSign",
+        value: "TravelAgencySign",
       },
     ],
   },
@@ -562,7 +562,7 @@ export const Data = [
       },
       {
         trait_type: "smallSing",
-        value: "GameShopSign",
+        value: "LaundrySign",
       },
     ],
   },
@@ -643,7 +643,7 @@ export const Data = [
       },
       {
         trait_type: "smallSing",
-        value: "ComicStoreSign",
+        value: "DvdSign",
       },
     ],
   },
@@ -724,7 +724,7 @@ export const Data = [
       },
       {
         trait_type: "smallSing",
-        value: "DvdSign",
+        value: "ToysShopSign",
       },
     ],
   },
@@ -805,7 +805,7 @@ export const Data = [
       },
       {
         trait_type: "smallSing",
-        value: "StationerySign",
+        value: "IzakayaSign",
       },
     ],
   },
