@@ -12,7 +12,7 @@ export default function BaseFive({ ...props }) {
     <group ref={group} {...props} dispose={null}>
       <mesh
         castShadow
-        castShadow
+        receiveShadow
         geometry={nodes.ObjObject.geometry}
         material={materials.palette}
         rotation={[Math.PI / 2, 0, 0]}
