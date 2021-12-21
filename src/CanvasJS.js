@@ -846,6 +846,93 @@ const Data = [
   },
 ];
 
+// const Data = [
+//   {
+//     name: "Sora Tycoon #2",
+//     description: "..............",
+//     image: "https://soratycoon.io/api/building/2",
+//     animation_url: "https://soraviewer.io/2",
+//     attributes: [
+//       {
+//         trait_type: "Base",
+//         value: "Base Two",
+//       },
+//       {
+//         trait_type: "Acc Base",
+//         value: "Pole Four",
+//       },
+//       {
+//         trait_type: "First Floor",
+//         value: "Type Eight",
+//       },
+//       {
+//         trait_type: "Acc First Floor Front Left",
+//         value: "Bike",
+//       },
+//       {
+//         trait_type: "Acc First Floor Front Right",
+//         value: "Crate",
+//       },
+//       {
+//         trait_type: "Acc First Floor Right Lower Back",
+//         value: "Green Trash Bin",
+//       },
+//       {
+//         trait_type: "Acc First Floor Right Lower Front",
+//         value: "Wooden Box",
+//       },
+//       {
+//         trait_type: "Acc First Floor Right Upper Back",
+//         value: "Condenser Unit Type D",
+//       },
+//       {
+//         trait_type: "Acc First Floor Right Upper Front",
+//         value: "Lantern",
+//       },
+//       {
+//         trait_type: "Second Floor",
+//         value: "Type Nine",
+//       },
+//       {
+//         trait_type: "Acc Second Floor Back Left",
+//         value: "Condenser Unit Type C",
+//       },
+//       {
+//         trait_type: "Acc Second Floor Back Right",
+//         value: "Condenser Unit Type C",
+//       },
+//       {
+//         trait_type: "Acc Second Floor Left Back",
+//         value: "Wall Vent",
+//       },
+//       {
+//         trait_type: "Acc Second Floor Left Front",
+//         value: "Condenser Unit Type A",
+//       },
+//       {
+//         trait_type: "Acc Second Floor Right Back",
+//         value: "Condenser Unit Type C",
+//       },
+//       {
+//         trait_type: "Acc Second Floor Right Front",
+//         value: "Condenser Unit Type A",
+//       },
+//       {
+//         trait_type: "Front",
+//         value: "Retro Three",
+//       },
+//       {
+//         trait_type: "Main Sign",
+//         value: "Mcd",
+//       },
+//       {
+//         trait_type: "Small Sign",
+//         value: "Minimart Sign",
+//       },
+//     ],
+//   },
+// ];
+
 function CanvasJS() {
   let url = useParams().id;
 
@@ -871,11 +958,11 @@ function CanvasJS() {
       <Canvas
         dpr={window.devicePixelRatio}
         shadows
-        camera={{ position: [0, 18, 20] }}
+        camera={{ position: [-20, 29, 20] }}
       >
-        <color attach="background" args={["#050405"]} />
+        <color attach="background" args={["#4f5050"]} />
         <hemisphereLight intensity={0.2} />
-        <ambientLight color={"#ffff"} intensity={0.5} />
+        <ambientLight color={"#ffff"} intensity={0.1} />
         <pointLight
           color={"#ff0040"}
           position={[3, 30, 3]}
@@ -935,7 +1022,7 @@ function CanvasJS() {
         <Suspense fallback={null}>
           <EffectComposer multisampling={0}>
             <group position={[0, 0, 0]}>
-              {/* <mesh
+              <mesh
                 rotation-x={-Math.PI / 2}
                 position={[0, 0.01, 0]}
                 scale={[50, 50, 1000]}
@@ -948,8 +1035,8 @@ function CanvasJS() {
                   transparent
                   color="#000"
                   opacity={0.5}
-                /> */}
-              <mesh
+                />
+                {/* <mesh
                 rotation-x={-Math.PI / 2}
                 position={[0, 0, 0]}
                 scale={[20, 20, 20]}
@@ -957,7 +1044,7 @@ function CanvasJS() {
                 renderOrder={100000}
               >
                 <planeGeometry />
-                <shadowMaterial transparent color="#251005" opacity={0.7} />
+                <shadowMaterial transparent color="#251005" opacity={0.7} /> */}
 
                 {/* <MeshReflectorMaterial
                   blur={[100, 100]}
@@ -974,9 +1061,9 @@ function CanvasJS() {
               </mesh>
             </group>
             <SMAA />
-            <group position={[0, 10, 0]}>
+            {/* <group position={[0, 10, 0]}>
               <Fireflies count={50} />
-            </group>
+            </group> */}
             <Environment files="satara_night_no_lamps_4k.hdr" />
             <Bloom
               intensity={2}

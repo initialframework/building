@@ -1,30 +1,30 @@
 import React from "react";
-import CondenserUnitTypeARightBackFloorTwo from "./CondenserUnitTypeARightBackFloorTwo";
-import CondenserUnitTypeBRightBackFloorTwo from "./CondenserUnitTypeBRightBackFloorTwo";
-import CondenserUnitTypeCRightBackFloorTwo from "./CondenserUnitTypeCRightBackFloorTwo";
-import CondenserUnitTypeDRightBackFloorTwo from "./CondenserUnitTypeDRightBackFloorTwo";
-import WallVentRightBackFloorTwo from "./WallVentRightBackFloorTwo";
+import CondenserUnitTypeA from "./CondenserUnitTypeA";
+import CondenserUnitTypeB from "./CondenserUnitTypeB";
+import CondenserUnitTypeC from "./CondenserUnitTypeC";
+import CondenserUnitTypeD from "./CondenserUnitTypeD";
+import WallVent from "./WallVent";
 
 function AccSecondFloorRightBack({ value }) {
-  let accSecondFloorRightBack = <CondenserUnitTypeARightBackFloorTwo />;
+  let accSecondFloorRightBack = <CondenserUnitTypeA />;
   switch (value) {
-    case "CondenserUnitTypeARightBackFloorTwo":
-      accSecondFloorRightBack = <CondenserUnitTypeARightBackFloorTwo />;
+    case "CondenserUnitTypeA":
+      accSecondFloorRightBack = <CondenserUnitTypeA />;
       break;
-    case "CondenserUnitTypeBRightBackFloorTwo":
-      accSecondFloorRightBack = <CondenserUnitTypeBRightBackFloorTwo />;
+    case "CondenserUnitTypeB":
+      accSecondFloorRightBack = <CondenserUnitTypeB />;
       break;
-    case "CondenserUnitTypeCRightBackFloorTwo":
-      accSecondFloorRightBack = <CondenserUnitTypeCRightBackFloorTwo />;
+    case "CondenserUnitTypeC":
+      accSecondFloorRightBack = <CondenserUnitTypeC />;
       break;
-    case "CondenserUnitTypeDRightBackFloorTwo":
-      accSecondFloorRightBack = <CondenserUnitTypeDRightBackFloorTwo />;
+    case "CondenserUnitTypeD":
+      accSecondFloorRightBack = <CondenserUnitTypeD />;
       break;
-    case "WallVentRightBackFloorTwo":
-      accSecondFloorRightBack = <WallVentRightBackFloorTwo />;
+    case "WallVent":
+      accSecondFloorRightBack = <WallVent />;
       break;
     default:
-      accSecondFloorRightBack = <CondenserUnitTypeARightBackFloorTwo />;
+      accSecondFloorRightBack = <CondenserUnitTypeA />;
   }
   return <>{accSecondFloorRightBack}</>;
 }

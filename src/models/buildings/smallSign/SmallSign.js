@@ -3,30 +3,30 @@ import AdultStoreSign from "./AdultStoreSign";
 import ArtistAgencySign from "./ArtistAgencySign";
 import BankSign from "./BankSign";
 import BikeShopSign from "./BikeShopSign";
-import CameraStoreSign from "./CameraStoreSign";
+import NikoSign from "./NikoSign";
 import ComicStoreSign from "./ComicStoreSign";
-import DvdSign from "./DvdSign";
+import OooSign from "./OooSign";
 import FujifilmSign from "./FujifilmSign";
 import GameShopSign from "./GameShopSign";
 import IzakayaSign from "./IzakayaSign";
 import JavStoreSign from "./JavStoreSign";
 import LaundrySign from "./LaundrySign";
 import McdSign from "./McdSign";
-import MinimartSign from "./MinimartSign";
+import LawSign from "./LawSign";
 import NetcafeSign from "./NetcafeSign";
-import PlaystationSign from "./PlaystationSign";
+import PaystationSign from "./PaystationSign";
 import RamenSign from "./RamenSign";
-import SegaSign from "./SegaSign";
-import StationerySign from "./StationerySign";
+import SeeSign from "./SeeSign";
+import LiftSign from "./LiftSign";
 import SushiBarSign from "./SushiBarSign";
 import ToysShopSign from "./ToysShopSign";
-import TravelAgencySign from "./TravelAgencySign";
+import BjSign from "./BjSign";
 import UdonSign from "./UdonSign";
-import UniqloSign from "./UniqloSign";
-import YoshinoyaSign from "./YoshinoyaSign";
+import LuqnioSign from "./LuqnioSign";
+import YoshSign from "./YoshSign";
 
 function SmallSign({ value }) {
-  let smallSign = <MinimartSign />;
+  let smallSign = <LawSign />;
   switch (value) {
     case "AdultStoreSign":
       smallSign = <AdultStoreSign />;
@@ -40,14 +40,14 @@ function SmallSign({ value }) {
     case "BikeShopSign":
       smallSign = <BikeShopSign />;
       break;
-    case "CameraStoreSign":
-      smallSign = <CameraStoreSign />;
+    case "NikoSign":
+      smallSign = <NikoSign />;
       break;
     case "ComicStoreSign":
       smallSign = <ComicStoreSign />;
       break;
-    case "DvdSign":
-      smallSign = <DvdSign />;
+    case "OooSign":
+      smallSign = <OooSign />;
       break;
     case "GameShopSign":
       smallSign = <GameShopSign />;
@@ -64,20 +64,20 @@ function SmallSign({ value }) {
     case "McdSign":
       smallSign = <McdSign />;
       break;
-    case "MinimartSign":
-      smallSign = <MinimartSign />;
+    case "LawSign":
+      smallSign = <LawSign />;
       break;
-    case "PlaystationSign":
-      smallSign = <PlaystationSign />;
+    case "PaystationSign":
+      smallSign = <PaystationSign />;
       break;
     case "RamenSign":
       smallSign = <RamenSign />;
       break;
-    case "SegaSign":
-      smallSign = <SegaSign />;
+    case "SeeSign":
+      smallSign = <SeeSign />;
       break;
-    case "StationerySign":
-      smallSign = <StationerySign />;
+    case "LiftSign":
+      smallSign = <LiftSign />;
       break;
     case "SushiBarSign":
       smallSign = <SushiBarSign />;
@@ -85,17 +85,17 @@ function SmallSign({ value }) {
     case "ToysShopSign":
       smallSign = <ToysShopSign />;
       break;
-    case "TravelAgencySign":
-      smallSign = <TravelAgencySign />;
+    case "BjSign":
+      smallSign = <BjSign />;
       break;
     case "UdonSign":
       smallSign = <UdonSign />;
       break;
-    case "UniqloSign":
-      smallSign = <UniqloSign />;
+    case "LuqnioSign":
+      smallSign = <LuqnioSign />;
       break;
-    case "YoshinoyaSign":
-      smallSign = <YoshinoyaSign />;
+    case "YoshSign":
+      smallSign = <YoshSign />;
       break;
     case "FujifilmSign":
       smallSign = <FujifilmSign />;
@@ -104,7 +104,7 @@ function SmallSign({ value }) {
       smallSign = <NetcafeSign />;
       break;
     default:
-      smallSign = <MinimartSign />;
+      smallSign = <LawSign />;
   }
   return <>{smallSign}</>;
 }

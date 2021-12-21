@@ -1,7 +1,5 @@
-import AccSecondFloorLeftBack.js from './AccSecondFloorLeftBack.js'
-import CondenserUnitTypeALeftBackFloorTwo.js from './CondenserUnitTypeALeftBackFloorTwo.js'
-import CondenserUnitTypeBLeftBackFloorTwo.js from './CondenserUnitTypeBLeftBackFloorTwo.js'
-import CondenserUnitTypeCLeftBackFloorTwo.js from './CondenserUnitTypeCLeftBackFloorTwo.js'
-import CondenserUnitTypeDLeftBackFloorTwo.js from './CondenserUnitTypeDLeftBackFloorTwo.js'
-import text.txt from './text.txt'
-import WallVentLeftBackFloorTwo.js from './WallVentLeftBackFloorTwo.js'
+npx gltfjsx condenserUnitTypeA.glb
+npx gltfjsx condenserUnitTypeB.glb
+npx gltfjsx condenserUnitTypeC.glb
+npx gltfjsx condenserUnitTypeD.glb
+npx gltfjsx wallVent.glb

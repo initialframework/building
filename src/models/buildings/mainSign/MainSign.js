@@ -3,30 +3,30 @@ import AdultStore from "./AdultStore";
 import ArtistAgency from "./ArtistAgency";
 import Bank from "./Bank";
 import BikeShop from "./BikeShop";
-import CameraStore from "./CameraStore";
-import Dvd from "./Dvd";
+import Niko from "./Niko";
+import Ooo from "./Ooo";
 import Fujifilm from "./Fujifilm";
 import GameShop from "./GameShop";
 import Izakaya from "./Izakaya";
 import JavStore from "./JavStore";
 import Laundry from "./Laundry";
-import Mcd from "./Mcd";
-import Minimart from "./Minimart";
+import Weasleys from "./Weasleys";
+import Law from "./Law";
 import NetCafe from "./NetCafe";
-import Playstation from "./Playstation";
+import Paystation from "./Paystation";
 import Ramen from "./Ramen";
 import RollingDoor from "./RollingDoor";
-import Sega from "./Sega";
-import Stationery from "./Stationery";
+import See from "./See";
+import Lift from "./Lift";
 import SushiBar from "./SushiBar";
 import ToysShop from "./ToysShop";
-import TravelAgency from "./TravelAgency";
+import Bj from "./Bj";
 import Udon from "./Udon";
-import Uniqlo from "./Uniqlo";
-import Yoshinoya from "./Yoshinoya";
+import Luqnio from "./Luqnio";
+import Yosh from "./Yosh";
 
 function MainSign({ value }) {
-  let mainSign = <Dvd />;
+  let mainSign = <Ooo />;
   switch (value) {
     case "AdultStore":
       mainSign = <AdultStore />;
@@ -40,11 +40,11 @@ function MainSign({ value }) {
     case "BikeShop":
       mainSign = <BikeShop />;
       break;
-    case "CameraStore":
-      mainSign = <CameraStore />;
+    case "Niko":
+      mainSign = <Niko />;
       break;
-    case "Dvd":
-      mainSign = <Dvd />;
+    case "Ooo":
+      mainSign = <Ooo />;
       break;
     case "Fujifilm":
       mainSign = <Fujifilm />;
@@ -61,17 +61,17 @@ function MainSign({ value }) {
     case "Laundry":
       mainSign = <Laundry />;
       break;
-    case "Mcd":
-      mainSign = <Mcd />;
+    case "Weasleys":
+      mainSign = <Weasleys />;
       break;
-    case "Minimart":
-      mainSign = <Minimart />;
+    case "Law":
+      mainSign = <Law />;
       break;
     case "NetCafe":
       mainSign = <NetCafe />;
       break;
-    case "Playstation":
-      mainSign = <Playstation />;
+    case "Paystation":
+      mainSign = <Paystation />;
       break;
     case "Ramen":
       mainSign = <Ramen />;
@@ -79,11 +79,11 @@ function MainSign({ value }) {
     case "RollingDoor":
       mainSign = <RollingDoor />;
       break;
-    case "Sega":
-      mainSign = <Sega />;
+    case "See":
+      mainSign = <See />;
       break;
-    case "Stationery":
-      mainSign = <Stationery />;
+    case "Lift":
+      mainSign = <Lift />;
       break;
     case "SushiBar":
       mainSign = <SushiBar />;
@@ -91,20 +91,20 @@ function MainSign({ value }) {
     case "ToysShop":
       mainSign = <ToysShop />;
       break;
-    case "TravelAgency":
-      mainSign = <TravelAgency />;
+    case "Bj":
+      mainSign = <Bj />;
       break;
     case "Udon":
       mainSign = <Udon />;
       break;
-    case "Uniqlo":
-      mainSign = <Uniqlo />;
+    case "Luqnio":
+      mainSign = <Luqnio />;
       break;
-    case "Yoshinoya":
-      mainSign = <Yoshinoya />;
+    case "Yosh":
+      mainSign = <Yosh />;
       break;
     default:
-      mainSign = <Dvd />;
+      mainSign = <Ooo />;
   }
   return <>{mainSign}</>;
 }
