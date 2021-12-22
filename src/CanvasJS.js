@@ -846,95 +846,100 @@ const Data = [
   },
 ];
 
-// const Data = [
-//   {
-//     name: "Sora Tycoon #2",
-//     description: "..............",
-//     image: "https://soratycoon.io/api/building/2",
-//     animation_url: "https://soraviewer.io/2",
-//     attributes: [
-//       {
-//         trait_type: "Base",
-//         value: "Base Two",
-//       },
-//       {
-//         trait_type: "Acc Base",
-//         value: "Pole Four",
-//       },
-//       {
-//         trait_type: "First Floor",
-//         value: "Type Eight",
-//       },
-//       {
-//         trait_type: "Acc First Floor Front Left",
-//         value: "Bike",
-//       },
-//       {
-//         trait_type: "Acc First Floor Front Right",
-//         value: "Crate",
-//       },
-//       {
-//         trait_type: "Acc First Floor Right Lower Back",
-//         value: "Green Trash Bin",
-//       },
-//       {
-//         trait_type: "Acc First Floor Right Lower Front",
-//         value: "Wooden Box",
-//       },
-//       {
-//         trait_type: "Acc First Floor Right Upper Back",
-//         value: "Condenser Unit Type D",
-//       },
-//       {
-//         trait_type: "Acc First Floor Right Upper Front",
-//         value: "Lantern",
-//       },
-//       {
-//         trait_type: "Second Floor",
-//         value: "Type Nine",
-//       },
-//       {
-//         trait_type: "Acc Second Floor Back Left",
-//         value: "Condenser Unit Type C",
-//       },
-//       {
-//         trait_type: "Acc Second Floor Back Right",
-//         value: "Condenser Unit Type C",
-//       },
-//       {
-//         trait_type: "Acc Second Floor Left Back",
-//         value: "Wall Vent",
-//       },
-//       {
-//         trait_type: "Acc Second Floor Left Front",
-//         value: "Condenser Unit Type A",
-//       },
-//       {
-//         trait_type: "Acc Second Floor Right Back",
-//         value: "Condenser Unit Type C",
-//       },
-//       {
-//         trait_type: "Acc Second Floor Right Front",
-//         value: "Condenser Unit Type A",
-//       },
-//       {
-//         trait_type: "Front",
-//         value: "Retro Three",
-//       },
-//       {
-//         trait_type: "Main Sign",
-//         value: "Mcd",
-//       },
-//       {
-//         trait_type: "Small Sign",
-//         value: "Minimart Sign",
-//       },
-//     ],
-//   },
-// ];
+const newData = [
+  {
+    name: "Sora Tycoon #2",
+    description: "..............",
+    image: "https://soratycoon.io/api/building/2",
+    animation_url: "https://soraviewer.io/2",
+    attributes: [
+      {
+        trait_type: "Base",
+        value: "Base Two",
+      },
+      {
+        trait_type: "Acc Base",
+        value: "Pole Four",
+      },
+      {
+        trait_type: "First Floor",
+        value: "Type Eight",
+      },
+      {
+        trait_type: "Acc First Floor Front Left",
+        value: "Bike",
+      },
+      {
+        trait_type: "Acc First Floor Front Right",
+        value: "Crate",
+      },
+      {
+        trait_type: "Acc First Floor Right Lower Back",
+        value: "Green Trash Bin",
+      },
+      {
+        trait_type: "Acc First Floor Right Lower Front",
+        value: "Wooden Box",
+      },
+      {
+        trait_type: "Acc First Floor Right Upper Back",
+        value: "Condenser Unit Type D",
+      },
+      {
+        trait_type: "Acc First Floor Right Upper Front",
+        value: "Lantern",
+      },
+      {
+        trait_type: "Second Floor",
+        value: "Type Nine",
+      },
+      {
+        trait_type: "Acc Second Floor Back Left",
+        value: "Condenser Unit Type C",
+      },
+      {
+        trait_type: "Acc Second Floor Back Right",
+        value: "Condenser Unit Type C",
+      },
+      {
+        trait_type: "Acc Second Floor Left Back",
+        value: "Wall Vent",
+      },
+      {
+        trait_type: "Acc Second Floor Left Front",
+        value: "Condenser Unit Type A",
+      },
+      {
+        trait_type: "Acc Second Floor Right Back",
+        value: "Condenser Unit Type C",
+      },
+      {
+        trait_type: "Acc Second Floor Right Front",
+        value: "Condenser Unit Type A",
+      },
+      {
+        trait_type: "Front",
+        value: "Retro Three",
+      },
+      {
+        trait_type: "Main Sign",
+        value: "Mcd",
+      },
+      {
+        trait_type: "Small Sign",
+        value: "Minimart Sign",
+      },
+    ],
+  },
+];
 
 function CanvasJS() {
   let url = useParams().id;
+
+  // remove space for calling javascript file
+  // newData[0].attributes.map(({ value }) =>
+  //   console.log(value.split(" ").join(""))
+  // );
 
   // const dispatch = useDispatch();
 
@@ -957,196 +962,106 @@ function CanvasJS() {
       <Canvas
         dpr={window.devicePixelRatio}
         shadows
-        camera={{ position: [-22, 11, 20] }}
+        camera={{
+          position: [-15, 10, 15],
+        }}
       >
-        <color attach="background" args={["#2b2d2f"]} />
-        <hemisphereLight intensity={0.2} />
-        {/* <ambientLight color={"#ffff"} intensity={0.1} /> */}
-        <pointLight
-          color={"#ff0040"}
-          position={[3, 30, 3]}
+        <color attach="background" args={["#070a0d"]} />
+        <hemisphereLight intensity={0.1} />
+        <spotLight
+          position={[15.903, 35.59, 16.093]}
           intensity={0.5}
-          castShadow
-        />
-        {/* <pointLight
           color={"#ffffff"}
-          position={[0, 7, 0]}
-          intensity={0.7}
+          distance={61.68}
+          angle={0.574}
+          penumbra={0.5}
+          decay={0}
           castShadow
-        /> */}
-        {/* <pointLight
-          color={"#ff0040"}
-          position={[0, 20, 0]}
-          intensity={1}
-          penumbra={0.2}
-          decay={2}
-          distance={200}
-          castShadow
-        /> */}
-        {/* <spotLight
-          penumbra={1}
-          angle={1}
-          castShadow
-          position={[10, 60, -5]}
-          intensity={1}
-          shadow-mapSize={[512, 512]}
-        /> */}
-        {/* <spotLight
-          castShadow
-          angle={Math.PI / 4}
-          position={[15, 40, 35]}
-          penumbra={0.2}
-          decay={2}
-          distance={200}
-          intensity={0.5}
-          shadowCameraNear={10}
-          shadowCameraFar={200}
-          shadowMapHeight={512}
-          shadowMapWidth={512}
-        /> */}
-        <directionalLight
-          color={"#ffff"}
-          intensity={0.5}
-          castShadow
-          shadowCameraNear={1}
-          shadowCameraFar={20}
-          shadowCameraRight={15}
-          shadowCameraLeft={-15}
-          shadowCameraTop={20}
-          shadowCameraBottom={-15}
-          shadowMapHeight={1024}
-          shadowMapWidth={1024}
+          shadowBias={-0.00013}
         />
-
         <Suspense fallback={null}>
-          <EffectComposer multisampling={0}>
-            <group position={[0, 0, 0]}>
-              <mesh
-                rotation-x={-Math.PI / 2}
-                position={[0, 0.01, 0]}
-                scale={[50, 50, 1000]}
-                receiveShadow
-                renderOrder={200}
-              >
-                <planeBufferGeometry attach="geometry" />
-                <shadowMaterial
-                  attach="material"
-                  transparent
-                  color="#000"
-                  opacity={0.5}
-                />
-                {/* <mesh
-                rotation-x={-Math.PI / 2}
-                position={[0, 0, 0]}
-                scale={[20, 20, 20]}
-                receiveShadow
-                renderOrder={100000}
-              >
-                <planeGeometry />
-                <shadowMaterial transparent color="#251005" opacity={0.7} /> */}
-
-                {/* <MeshReflectorMaterial
-                  blur={[100, 100]}
-                  resolution={1024}
-                  mixBlur={1}
-                  mixStrength={3.5}
-                  depthScale={1}
-                  minDepthThreshold={1}
-                  maxDepthThreshold={1}
-                  color="#131842"
-                  metalness={0.5}
-                  roughness={0.2}
-                /> */}
-              </mesh>
-            </group>
-            <SMAA />
-            {/* <group position={[0, 10, 0]}>
-              <Fireflies count={50} />
-            </group> */}
-            <Environment files="satara_night_no_lamps_4k.hdr" />
-            <Bloom
-              intensity={2}
-              width={Resizer.AUTO_SIZE}
-              height={Resizer.AUTO_SIZE}
-              kernelSize={KernelSize.LARGE}
-              luminanceThreshold={0.6}
-              luminanceSmoothing={0.2}
-            />
-            {/* <Models buildingByUrl={buildingByUrl} /> */}
-            <Base value={buildingByUrl.attributes[0].value} />
-            <AccBase value={buildingByUrl.attributes[1].value} />
-            <FirstFloor value={buildingByUrl.attributes[2].value} />
-            <AccFirstFloorFrontLeft value={buildingByUrl.attributes[3].value} />
-            <AccFirstFloorFrontRight
-              value={buildingByUrl.attributes[4].value}
-            />
-            <AccFirstFloorRightLowerBack
-              value={buildingByUrl.attributes[5].value}
-            />
-            <AccFirstFloorRightLowerFront
-              value={buildingByUrl.attributes[6].value}
-            />
-            <AccFirstFloorRightUpperBack
-              value={buildingByUrl.attributes[7].value}
-            />
-            <AccFirstFloorRightUpperFront
-              value={buildingByUrl.attributes[8].value}
-            />
-            <SecondFloor value={buildingByUrl.attributes[9].value} />
-            <AccSecondFloorBackLeft
-              value={buildingByUrl.attributes[10].value}
-            />
-            <AccSecondFloorBackRight
-              value={buildingByUrl.attributes[11].value}
-            />
-            <AccSecondFloorLeftBack
-              value={buildingByUrl.attributes[12].value}
-            />
-            <AccSecondFloorLeftFront
-              value={buildingByUrl.attributes[13].value}
-            />
-            <AccSecondFloorRightBack
-              value={buildingByUrl.attributes[14].value}
-            />
-            <AccSecondFloorRightFront
-              value={buildingByUrl.attributes[15].value}
-            />
-            <Front value={buildingByUrl.attributes[16].value} />
-            <MainSign value={buildingByUrl.attributes[17].value} />
-            <SmallSign value={buildingByUrl.attributes[18].value} />
-          </EffectComposer>
+          <group position={[0, -6, 0]}>
+            <EffectComposer multisampling={0}>
+              <group position={[0, 0, 0]}>
+                <mesh
+                  rotation-x={-Math.PI / 2}
+                  position={[0, 0.01, 0]}
+                  scale={[50, 50, 1000]}
+                  receiveShadow
+                  renderOrder={200}
+                >
+                  <planeBufferGeometry attach="geometry" />
+                  <shadowMaterial
+                    attach="material"
+                    transparent
+                    color="#000"
+                    opacity={0.5}
+                  />
+                </mesh>
+              </group>
+              <SMAA />
+              <group position={[0, 5, 0]}>
+                <Fireflies count={65} />
+              </group>
+              <Environment files="satara_night_no_lamps_4k.hdr" />
+              <Bloom
+                intensity={2}
+                width={Resizer.AUTO_SIZE}
+                height={Resizer.AUTO_SIZE}
+                kernelSize={KernelSize.LARGE}
+                luminanceThreshold={0.6}
+                luminanceSmoothing={0.2}
+              />
+              <Base value={buildingByUrl.attributes[0].value} />
+              <AccBase value={buildingByUrl.attributes[1].value} />
+              <FirstFloor value={buildingByUrl.attributes[2].value} />
+              <AccFirstFloorFrontLeft
+                value={buildingByUrl.attributes[3].value}
+              />
+              <AccFirstFloorFrontRight
+                value={buildingByUrl.attributes[4].value}
+              />
+              <AccFirstFloorRightLowerBack
+                value={buildingByUrl.attributes[5].value}
+              />
+              <AccFirstFloorRightLowerFront
+                value={buildingByUrl.attributes[6].value}
+              />
+              <AccFirstFloorRightUpperBack
+                value={buildingByUrl.attributes[7].value}
+              />
+              <AccFirstFloorRightUpperFront
+                value={buildingByUrl.attributes[8].value}
+              />
+              <SecondFloor value={buildingByUrl.attributes[9].value} />
+              <AccSecondFloorBackLeft
+                value={buildingByUrl.attributes[10].value}
+              />
+              <AccSecondFloorBackRight
+                value={buildingByUrl.attributes[11].value}
+              />
+              <AccSecondFloorLeftBack
+                value={buildingByUrl.attributes[12].value}
+              />
+              <AccSecondFloorLeftFront
+                value={buildingByUrl.attributes[13].value}
+              />
+              <AccSecondFloorRightBack
+                value={buildingByUrl.attributes[14].value}
+              />
+              <AccSecondFloorRightFront
+                value={buildingByUrl.attributes[15].value}
+              />
+              <Front value={buildingByUrl.attributes[16].value} />
+              <MainSign value={buildingByUrl.attributes[17].value} />
+              <SmallSign value={buildingByUrl.attributes[18].value} />
+            </EffectComposer>
+          </group>
         </Suspense>
         <OrbitControls enableZoom={true} enablePan={true} />
         <PerspectiveCamera />
       </Canvas>
     </React.Fragment>
-  );
-}
-
-function Models({ buildingByUrl }) {
-  console.log(buildingByUrl);
-  return (
-    <>
-      <Base value={buildingByUrl[0].value} />
-      <AccBase value={buildingByUrl[1].value} />
-      <FirstFloor value={buildingByUrl[2].value} />
-      <AccFirstFloorFrontLeft value={buildingByUrl[3].value} />
-      <AccFirstFloorFrontRight value={buildingByUrl[4].value} />
-      <AccFirstFloorRightLowerBack value={buildingByUrl[5].value} />
-      <AccFirstFloorRightLowerFront value={buildingByUrl[6].value} />
-      <AccFirstFloorRightUpperBack value={buildingByUrl[7].value} />
-      <AccFirstFloorRightUpperFront value={buildingByUrl[8].value} />
-      <SecondFloor value={buildingByUrl[9].value} />
-      <AccSecondFloorBackLeft value={buildingByUrl[10].value} />
-      <AccSecondFloorBackRight value={buildingByUrl[11].value} />
-      <AccSecondFloorLeftBack value={buildingByUrl[12].value} />
-      <AccSecondFloorLeftFront value={buildingByUrl[13].value} />
-      <AccSecondFloorRightBack value={buildingByUrl[14].value} />
-      <AccSecondFloorRightFront value={buildingByUrl[15].value} />
-      <Front value={buildingByUrl[16].value} />
-      <MainSign value={buildingByUrl[17].value} />
-      <SmallSign value={buildingByUrl[18].value} />
-    </>
   );
 }
 
