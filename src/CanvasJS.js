@@ -951,18 +951,17 @@ function CanvasJS() {
   // }, [buildingByUrlStatus, dispatch, url]);
 
   const buildingByUrl = Data.find(({ id }) => id === url);
-  console.log(buildingByUrl);
 
   return (
     <React.Fragment>
       <Canvas
         dpr={window.devicePixelRatio}
         shadows
-        camera={{ position: [-20, 29, 20] }}
+        camera={{ position: [-22, 11, 20] }}
       >
-        <color attach="background" args={["#4f5050"]} />
+        <color attach="background" args={["#2b2d2f"]} />
         <hemisphereLight intensity={0.2} />
-        <ambientLight color={"#ffff"} intensity={0.1} />
+        {/* <ambientLight color={"#ffff"} intensity={0.1} /> */}
         <pointLight
           color={"#ff0040"}
           position={[3, 30, 3]}
@@ -1070,7 +1069,7 @@ function CanvasJS() {
               width={Resizer.AUTO_SIZE}
               height={Resizer.AUTO_SIZE}
               kernelSize={KernelSize.LARGE}
-              luminanceThreshold={0.7}
+              luminanceThreshold={0.6}
               luminanceSmoothing={0.2}
             />
             {/* <Models buildingByUrl={buildingByUrl} /> */}
