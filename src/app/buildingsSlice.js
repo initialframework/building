@@ -30,10 +30,11 @@ const initialState = {
 export const fetchBuildingByUrl = createAsyncThunk(
   "buildings/fetchBuildingByUrl",
   async (url) => {
-    const response = await supabase
-      .from("attributes")
-      .select("*")
-      .eq("name", url);
+    // const response = await supabase
+    //   .from("attributes")
+    //   .select("*")
+    //   .eq("name", url);
+    const response = url;
     return response;
   }
 );
