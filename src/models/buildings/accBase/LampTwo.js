@@ -7,19 +7,15 @@ import { useGLTF } from "@react-three/drei";
 
 export default function Model({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/buildings/accBase");
+  const { nodes, materials } = useGLTF("/buildings/accBase/lampTwo.glb");
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.ObjObject_1.geometry}
           material={materials.palette}
         />
         <mesh
-          castShadow
-          receiveShadow
           geometry={nodes.ObjObject_2.geometry}
           material={materials.putih}
         />
@@ -28,4 +24,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/accBase");
+useGLTF.preload("/buildings/accBase/lampTwo.glb");

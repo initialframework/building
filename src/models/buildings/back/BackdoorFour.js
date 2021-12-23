@@ -7,7 +7,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function Model({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/buildings/smallSign/bikeShopSign.glb");
+  const { nodes, materials } = useGLTF("/buildings/back/backdoorFour.glb");
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
@@ -19,9 +19,13 @@ export default function Model({ ...props }) {
           geometry={nodes.ObjObject_2.geometry}
           material={materials.putih}
         />
+        <mesh
+          geometry={nodes.ObjObject_3.geometry}
+          material={materials.hijau}
+        />
       </group>
     </group>
   );
 }
 
-useGLTF.preload("/buildings/smallSign/bikeShopSign.glb");
+useGLTF.preload("/buildings/back/backdoorFour.glb");
