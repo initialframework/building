@@ -1,18 +1,17 @@
-import React, { Suspense, useEffect } from "react";
+import React, { Suspense } from "react";
 import { useParams } from "react-router-dom";
 import { Canvas } from "@react-three/fiber";
 import {
   Environment,
-  MeshReflectorMaterial,
   OrbitControls,
   PerspectiveCamera,
 } from "@react-three/drei";
 import { Bloom, EffectComposer, SMAA } from "@react-three/postprocessing";
 import { Resizer, KernelSize } from "postprocessing";
 import Fireflies from "./components/Fireflies";
-import { useSelector } from "react-redux";
-import { fetchBuildingByUrl } from "./app/buildingsSlice";
-import { useDispatch } from "react-redux";
+// import { useSelector } from "react-redux";
+// import { fetchBuildingByUrl } from "./app/buildingsSlice";
+// import { useDispatch } from "react-redux";
 import Base from "./models/buildings/base/Base";
 import FirstFloor from "./models/buildings/firstFloor/FirstFloor";
 import SecondFloor from "./models/buildings/secondFloor/SecondFloor";
@@ -937,9 +936,9 @@ function CanvasJS() {
   let url = useParams().id;
 
   // remove space for calling javascript file
-  // newData[0].attributes.map(({ value }) =>
-  //   console.log(value.split(" ").join(""))
-  // );
+  newData[0].attributes.map(({ value }) =>
+    console.log(value.split(" ").join(""))
+  );
 
   // const dispatch = useDispatch();
 
