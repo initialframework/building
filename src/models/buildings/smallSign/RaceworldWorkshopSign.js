@@ -30,4 +30,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/smallSign/raceworldWorkshopSign.glb");
+// useGLTF.preload("/buildings/smallSign/raceworldWorkshopSign.glb");

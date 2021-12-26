@@ -21,4 +21,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/mainSign/rollingDoor.glb");
+// useGLTF.preload("/buildings/mainSign/rollingDoor.glb");

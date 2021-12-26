@@ -42,4 +42,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/smallSign/adultStoreSign.glb");
+// useGLTF.preload("/buildings/smallSign/adultStoreSign.glb");

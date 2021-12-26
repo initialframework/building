@@ -30,4 +30,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/accFirstFloorFrontLeft/vendingMachine.glb");
+// useGLTF.preload("/buildings/accFirstFloorFrontLeft/vendingMachine.glb");

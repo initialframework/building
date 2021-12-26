@@ -34,4 +34,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/mainSign/sushiBar.glb");
+// useGLTF.preload("/buildings/mainSign/sushiBar.glb");

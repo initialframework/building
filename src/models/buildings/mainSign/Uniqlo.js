@@ -26,4 +26,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/mainSign/uniqlo.glb");
+// useGLTF.preload("/buildings/mainSign/uniqlo.glb");

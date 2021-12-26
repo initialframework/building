@@ -26,4 +26,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/mainSign/cameraStore.glb");
+// useGLTF.preload("/buildings/mainSign/cameraStore.glb");

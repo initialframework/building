@@ -24,4 +24,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/smallSign/maidCafeSign.glb");
+// useGLTF.preload("/buildings/smallSign/maidCafeSign.glb");

@@ -23,4 +23,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/accFirstFloorRightLowerFront/woodenBox.glb");
+// useGLTF.preload("/buildings/accFirstFloorRightLowerFront/woodenBox.glb");

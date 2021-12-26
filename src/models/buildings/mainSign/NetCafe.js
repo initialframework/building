@@ -28,4 +28,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/mainSign/netCafe.glb");
+// useGLTF.preload("/buildings/mainSign/netCafe.glb");

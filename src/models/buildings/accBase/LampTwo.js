@@ -24,4 +24,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/accBase/lampTwo.glb");
+// useGLTF.preload("/buildings/accBase/lampTwo.glb");

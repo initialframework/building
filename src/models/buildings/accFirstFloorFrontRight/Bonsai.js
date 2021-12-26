@@ -23,4 +23,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/accFirstFloorFrontRight/bonsai.glb");
+// useGLTF.preload("/buildings/accFirstFloorFrontRight/bonsai.glb");

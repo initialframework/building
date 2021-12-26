@@ -23,4 +23,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/accFirstFloorRightLowerFront/blueTrashBin.glb");
+// useGLTF.preload("/buildings/accFirstFloorRightLowerFront/blueTrashBin.glb");

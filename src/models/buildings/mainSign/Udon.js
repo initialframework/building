@@ -28,4 +28,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/mainSign/udon.glb");
+// useGLTF.preload("/buildings/mainSign/udon.glb");

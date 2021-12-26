@@ -21,4 +21,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/accBase/noParkingSign.glb");
+// useGLTF.preload("/buildings/accBase/noParkingSign.glb");

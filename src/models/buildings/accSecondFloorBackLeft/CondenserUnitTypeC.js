@@ -23,4 +23,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/accSecondFloorBackLeft/condenserUnitTypeC.glb");
+// useGLTF.preload("/buildings/accSecondFloorBackLeft/condenserUnitTypeC.glb");

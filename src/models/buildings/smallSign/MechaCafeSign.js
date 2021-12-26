@@ -27,4 +27,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/smallSign/mechaCafeSign.glb");
+// useGLTF.preload("/buildings/smallSign/mechaCafeSign.glb");

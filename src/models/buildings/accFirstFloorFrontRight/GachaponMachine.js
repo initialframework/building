@@ -23,4 +23,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/accFirstFloorFrontRight/gachaponMachine.glb");
+// useGLTF.preload("/buildings/accFirstFloorFrontRight/gachaponMachine.glb");
