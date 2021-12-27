@@ -1002,7 +1002,7 @@ function CanvasJS() {
               <group position={[0, 5, 0]}>
                 <Fireflies count={65} />
               </group>
-              <Environment files="satara_night_no_lamps_4k.hdr" />
+              <Environment preset="night" />
               <Bloom
                 intensity={2}
                 width={Resizer.AUTO_SIZE}
