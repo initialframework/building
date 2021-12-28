@@ -8,6 +8,9 @@ import { useGLTF } from "@react-three/drei";
 export default function Model({ ...props }) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/buildings/mainSign/sushiBar.glb");
+  materials.merah.emissive.b = 0.2;
+  materials.merah.emissive.g = 0.5;
+  materials.merah.emissive.r = 10;
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>

@@ -24,10 +24,54 @@ import Bj from "./Bj";
 import Udon from "./Udon";
 import Luqnio from "./Luqnio";
 import Yosh from "./Yosh";
+import CatCafe from "./CatCafe";
+import CoffeeShop from "./CoffeeShop";
+import Dailymart from "./Dailymart";
+import DvdTsubomi from "./DvdTsubomi";
+import MaidCafe from "./MaidCafe";
+import RaceworldWorkshop from "./RaceworldWorkshop";
+import RamenIAN from "./RamenIAN";
+import Sfc from "./Sfc";
+import StationeryTora from "./StationeryTora";
+import TravelAgencyJapan from "./TravelAgencyJapan";
+import ZeroFourMart from "./ZeroFourMart";
 
 function MainSign({ value }) {
   let mainSign = <Ooo />;
   switch (value) {
+    case "ZeroFourMart":
+      mainSign = <ZeroFourMart />;
+      break;
+    case "TravelAgencyJapan":
+      mainSign = <TravelAgencyJapan />;
+      break;
+    case "StationeryTora":
+      mainSign = <StationeryTora />;
+      break;
+    case "Sfc":
+      mainSign = <Sfc />;
+      break;
+    case "RamenIAN":
+      mainSign = <RamenIAN />;
+      break;
+    case "RaceworldWorkshop":
+      mainSign = <RaceworldWorkshop />;
+      break;
+    case "MaidCafe":
+      mainSign = <MaidCafe />;
+      break;
+    case "DvdTsubomi":
+      mainSign = <DvdTsubomi />;
+      break;
+    case "CoffeeShop":
+      mainSign = <CoffeeShop />;
+      break;
+    case "Dailymart":
+      mainSign = <Dailymart />;
+      break;
+    case "CatCafe":
+      mainSign = <CatCafe />;
+      break;
     case "AdultStore":
       mainSign = <AdultStore />;
       break;

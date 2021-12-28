@@ -24,10 +24,54 @@ import BjSign from "./BjSign";
 import UdonSign from "./UdonSign";
 import LuqnioSign from "./LuqnioSign";
 import YoshSign from "./YoshSign";
+import CatCafeSign from "./CatCafeSign";
+import CoffeeShopSign from "./CoffeeShopSign";
+import DailymartSign from "./DailymartSign";
+import DvdTsubomiSign from "./DvdTsubomiSign";
+import MaidCafeSign from "./MaidCafeSign";
+import RaceworldWorkshopSign from "./RaceworldWorkshopSign";
+import RamenIANSign from "./RamenIANSign";
+import SfcSign from "./SfcSign";
+import StationeryToraSign from "./StationeryToraSign";
+import JTTravelAgencySign from "./JTTravelAgencySign";
+import ZeroFourMartSign from "./ZeroFourMartSign";
 
 function SmallSign({ value }) {
   let smallSign = <LawSign />;
   switch (value) {
+    case "ZeroFourMartSign":
+      smallSign = <ZeroFourMartSign />;
+      break;
+    case "JTTravelAgencySign":
+      smallSign = <JTTravelAgencySign />;
+      break;
+    case "StationeryToraSign":
+      smallSign = <StationeryToraSign />;
+      break;
+    case "SfcSign":
+      smallSign = <SfcSign />;
+      break;
+    case "RamenIANSign":
+      smallSign = <RamenIANSign />;
+      break;
+    case "RaceworldWorkshopSign":
+      smallSign = <RaceworldWorkshopSign />;
+      break;
+    case "MaidCafeSign":
+      smallSign = <MaidCafeSign />;
+      break;
+    case "DvdTsubomiSign":
+      smallSign = <DvdTsubomiSign />;
+      break;
+    case "CoffeeShopSign":
+      smallSign = <CoffeeShopSign />;
+      break;
+    case "DailymartSign":
+      smallSign = <DailymartSign />;
+      break;
+    case "CatCafeSign":
+      smallSign = <CatCafeSign />;
+      break;
     case "AdultStoreSign":
       smallSign = <AdultStoreSign />;
       break;

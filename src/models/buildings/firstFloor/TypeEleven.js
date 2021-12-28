@@ -8,6 +8,9 @@ import { useGLTF } from "@react-three/drei";
 export default function Model({ ...props }) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/buildings/firstFloor/typeEleven.glb");
+  materials.orange.emissive.b = 0.2;
+  materials.orange.emissive.g = 5;
+  materials.orange.emissive.r = 5;
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
