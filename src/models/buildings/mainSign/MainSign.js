@@ -15,7 +15,6 @@ import Law from "./Law";
 import NetCafe from "./NetCafe";
 import Paystation from "./Paystation";
 import Ramen from "./Ramen";
-import RollingDoor from "./RollingDoor";
 import See from "./See";
 import Lift from "./Lift";
 import SushiBar from "./SushiBar";
@@ -119,9 +118,6 @@ function MainSign({ value }) {
       break;
     case "Ramen":
       mainSign = <Ramen />;
-      break;
-    case "RollingDoor":
-      mainSign = <RollingDoor />;
       break;
     case "See":
       mainSign = <See />;
