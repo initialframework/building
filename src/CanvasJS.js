@@ -181,9 +181,9 @@ function CanvasJS() {
                 </mesh>
               </group>
               <SMAA />
-              <group position={[0, 5, 0]}>
+              {/* <group position={[0, 5, 0]}>
                 <Fireflies count={65} />
-              </group>
+              </group> */}
               <Environment preset="night" />
               <Bloom
                 intensity={1}
