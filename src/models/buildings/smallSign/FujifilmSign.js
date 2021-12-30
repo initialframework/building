@@ -7,7 +7,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function Model({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/buildings/smallSign/fujifilmSign.glb");
+  const { nodes, materials } = useGLTF("/buildings/smallSign/fwifilmSign.glb");
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>

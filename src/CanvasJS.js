@@ -136,7 +136,7 @@ function CanvasJS() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  console.log(data);
+  // console.log(data);
 
   return (
     <React.Fragment>
