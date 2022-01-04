@@ -23,4 +23,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/accSecondFloorRightBack/wallVent.glb");
+useGLTF.preload("/buildings/accSecondFloorRightBack/wallVent.glb");

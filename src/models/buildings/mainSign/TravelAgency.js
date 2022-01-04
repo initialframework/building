@@ -26,4 +26,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/mainSign/travelAgency.glb");
+useGLTF.preload("/buildings/mainSign/travelAgency.glb");

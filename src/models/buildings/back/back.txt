@@ -1,0 +1,7 @@
+const Back = React.lazy(() => import("./Back"));
+const BackdoorFive = React.lazy(() => import("./BackdoorFive"));
+const BackdoorFour = React.lazy(() => import("./BackdoorFour"));
+const BackdoorOne = React.lazy(() => import("./BackdoorOne"));
+const BackdoorThree = React.lazy(() => import("./BackdoorThree"));
+const BackdoorTwo = React.lazy(() => import("./BackdoorTwo"));
+const TrashBinOne = React.lazy(() => import("./TrashBinOne"));

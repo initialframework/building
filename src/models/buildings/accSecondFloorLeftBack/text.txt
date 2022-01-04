@@ -1,5 +1,0 @@
-npx gltfjsx condenserUnitTypeA.glb
-npx gltfjsx condenserUnitTypeB.glb
-npx gltfjsx condenserUnitTypeC.glb
-npx gltfjsx condenserUnitTypeD.glb
-npx gltfjsx wallVent.glb

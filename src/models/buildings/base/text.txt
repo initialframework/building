@@ -1,7 +1,0 @@
-npx gltfjsx baseFive.glb
-npx gltfjsx baseFour.glb
-npx gltfjsx baseOne.glb
-npx gltfjsx baseSix.glb
-npx gltfjsx baseThree.glb
-npx gltfjsx baseTwo.glb
-npx gltfjsx text.txt

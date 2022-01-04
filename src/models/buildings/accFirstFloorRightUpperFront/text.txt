@@ -1,6 +1,0 @@
-npx gltfjsx condenserUnitTypeB.glb
-npx gltfjsx electricBox.glb
-npx gltfjsx lantern.glb
-npx gltfjsx lightBox.glb
-npx gltfjsx pipe.glb
-npx gltfjsx text.txt

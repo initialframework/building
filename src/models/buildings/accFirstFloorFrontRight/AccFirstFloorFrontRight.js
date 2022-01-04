@@ -1,9 +1,9 @@
 import React from "react";
-import Bonsai from "./Bonsai";
-import CondenserUnit from "./CondenserUnit";
-import Crate from "./Crate";
-import GachaponMachine from "./GachaponMachine";
-import Mailbox from "./Mailbox";
+const Bonsai = React.lazy(() => import("./Bonsai"));
+const CondenserUnit = React.lazy(() => import("./CondenserUnit"));
+const Crate = React.lazy(() => import("./Crate"));
+const GachaponMachine = React.lazy(() => import("./GachaponMachine"));
+const Mailbox = React.lazy(() => import("./Mailbox"));
 
 function AccFirstFloorFrontRight({ value }) {
   let accFirstFloorFrontRight = <Bonsai />;

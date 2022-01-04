@@ -33,4 +33,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/smallSign/travelAgencySign.glb");
+useGLTF.preload("/buildings/smallSign/travelAgencySign.glb");

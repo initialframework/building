@@ -1,0 +1,6 @@
+const AccFirstFloorRightUpperFront = React.lazy(() => import("./AccFirstFloorRightUpperFront"));
+const CondenserUnitTypeB = React.lazy(() => import("./CondenserUnitTypeB"));
+const ElectricBox = React.lazy(() => import("./ElectricBox"));
+const Lantern = React.lazy(() => import("./Lantern"));
+const LightBox = React.lazy(() => import("./LightBox"));
+const Pipe = React.lazy(() => import("./Pipe"));

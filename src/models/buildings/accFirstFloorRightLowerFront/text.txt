@@ -1,6 +1,0 @@
-npx gltfjsx blueTrashBin.glb
-npx gltfjsx poster.glb
-npx gltfjsx smallVendingMachine.glb
-npx gltfjsx text.txt
-npx gltfjsx vendingMachine.glb
-npx gltfjsx woodenBox.glb

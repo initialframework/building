@@ -28,4 +28,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/smallSign/laundrySign.glb");
+useGLTF.preload("/buildings/smallSign/laundrySign.glb");

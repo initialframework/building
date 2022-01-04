@@ -45,4 +45,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/accBase/trafficLightTwo.glb");
+useGLTF.preload("/buildings/accBase/trafficLightTwo.glb");

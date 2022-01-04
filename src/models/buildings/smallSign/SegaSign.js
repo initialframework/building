@@ -26,4 +26,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/smallSign/segaSign.glb");
+useGLTF.preload("/buildings/smallSign/segaSign.glb");

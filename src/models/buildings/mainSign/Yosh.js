@@ -28,4 +28,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/mainSign/yosh.glb");
+useGLTF.preload("/buildings/mainSign/yosh.glb");

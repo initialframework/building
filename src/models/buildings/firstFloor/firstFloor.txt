@@ -1,0 +1,19 @@
+
+const TypeEight = React.lazy(() => import("./TypeEight"));
+const TypeEighteen = React.lazy(() => import("./TypeEighteen"));
+const TypeEleven = React.lazy(() => import("./TypeEleven"));
+const TypeFive = React.lazy(() => import("./TypeFive"));
+const TypeFiveteen = React.lazy(() => import("./TypeFiveteen"));
+const TypeFour = React.lazy(() => import("./TypeFour"));
+const TypeFourteen = React.lazy(() => import("./TypeFourteen"));
+const TypeNine = React.lazy(() => import("./TypeNine"));
+const TypeOne = React.lazy(() => import("./TypeOne"));
+const TypeSeven = React.lazy(() => import("./TypeSeven"));
+const TypeSeventeen = React.lazy(() => import("./TypeSeventeen"));
+const TypeSix = React.lazy(() => import("./TypeSix"));
+const TypeSixteen = React.lazy(() => import("./TypeSixteen"));
+const TypeTen = React.lazy(() => import("./TypeTen"));
+const TypeThirteen = React.lazy(() => import("./TypeThirteen"));
+const TypeThree = React.lazy(() => import("./TypeThree"));
+const TypeTwelve = React.lazy(() => import("./TypeTwelve"));
+const TypeTwo = React.lazy(() => import("./TypeTwo"));

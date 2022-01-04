@@ -24,4 +24,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload('/izakaya.glb')
+useGLTF.preload("/izakaya.glb");

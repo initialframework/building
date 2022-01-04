@@ -37,4 +37,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/smallSign/ramenSign.glb");
+useGLTF.preload("/buildings/smallSign/ramenSign.glb");

@@ -1,9 +1,9 @@
 import React from "react";
-import CondenserUnitTypeB from "./CondenserUnitTypeB";
-import ElectricBox from "./ElectricBox";
-import Lantern from "./Lantern";
-import LightBox from "./LightBox";
-import Pipe from "./Pipe";
+const CondenserUnitTypeB = React.lazy(() => import("./CondenserUnitTypeB"));
+const ElectricBox = React.lazy(() => import("./ElectricBox"));
+const Lantern = React.lazy(() => import("./Lantern"));
+const LightBox = React.lazy(() => import("./LightBox"));
+const Pipe = React.lazy(() => import("./Pipe"));
 
 function AccFirstFloorRightUpperFront({ value }) {
   let accFirstFloorRightUpperFront = <ElectricBox />;

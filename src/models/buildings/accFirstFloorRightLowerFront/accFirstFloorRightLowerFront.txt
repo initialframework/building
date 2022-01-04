@@ -1,0 +1,6 @@
+const AccFirstFloorRightLowerFront = React.lazy(() => import("./AccFirstFloorRightLowerFront"));
+const BlueTrashBin = React.lazy(() => import("./BlueTrashBin"));
+const Poster = React.lazy(() => import("./Poster"));
+const SmallVendingMachine = React.lazy(() => import("./SmallVendingMachine"));
+const VendingMachine = React.lazy(() => import("./VendingMachine"));
+const WoodenBox = React.lazy(() => import("./WoodenBox"));

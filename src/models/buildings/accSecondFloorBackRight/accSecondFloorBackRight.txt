@@ -1,0 +1,6 @@
+const AccSecondFloorBackRight.js = React.lazy(() => import("./AccSecondFloorBackRight.js"));
+const CondenserUnitTypeA.js = React.lazy(() => import("./CondenserUnitTypeA.js"));
+const CondenserUnitTypeB.js = React.lazy(() => import("./CondenserUnitTypeB.js"));
+const CondenserUnitTypeC.js = React.lazy(() => import("./CondenserUnitTypeC.js"));
+const CondenserUnitTypeD.js = React.lazy(() => import("./CondenserUnitTypeD.js"));
+const WallVent.js = React.lazy(() => import("./WallVent.js"));

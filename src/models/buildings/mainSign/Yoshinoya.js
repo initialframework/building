@@ -26,4 +26,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/mainSign/yoshinoya.glb");
+useGLTF.preload("/buildings/mainSign/yoshinoya.glb");

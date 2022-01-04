@@ -1,9 +1,9 @@
 import React from "react";
-import BlueTrashBin from "./BlueTrashBin";
-import Poster from "./Poster";
-import SmallVendingMachine from "./SmallVendingMachine";
-import VendingMachine from "./VendingMachine";
-import WoodenBox from "./WoodenBox";
+const BlueTrashBin = React.lazy(() => import("./BlueTrashBin"));
+const Poster = React.lazy(() => import("./Poster"));
+const SmallVendingMachine = React.lazy(() => import("./SmallVendingMachine"));
+const VendingMachine = React.lazy(() => import("./VendingMachine"));
+const WoodenBox = React.lazy(() => import("./WoodenBox"));
 
 function AccFirstFloorRightLowerFront({ value }) {
   let accFirstFloorRightLowerFront = <BlueTrashBin />;

@@ -10,9 +10,9 @@ export default function Model({ ...props }) {
   const { nodes, materials } = useGLTF(
     "/buildings/smallSign/adultStoreSign.glb"
   );
-  materials.merah.emissive.b = 0.2;
-  materials.merah.emissive.g = 0.5;
-  materials.merah.emissive.r = 10;
+  // materials.merah.emissive.b = 0.2;
+  // materials.merah.emissive.g = 0.5;
+  // materials.merah.emissive.r = 10;
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
@@ -28,21 +28,21 @@ export default function Model({ ...props }) {
           geometry={nodes.ObjObject_2.geometry}
           material={materials.putih}
         />
-        <mesh
+        {/* <mesh
           castShadow
           receiveShadow
           geometry={nodes.ObjObject_3.geometry}
           material={materials.merah}
-        />
-        <mesh
+        /> */}
+        {/* <mesh
           castShadow
           receiveShadow
           geometry={nodes.ObjObject_4.geometry}
           material={materials.pink}
-        />
+        /> */}
       </group>
     </group>
   );
 }
 
-// useGLTF.preload("/buildings/smallSign/adultStoreSign.glb");
+useGLTF.preload("/buildings/smallSign/adultStoreSign.glb");

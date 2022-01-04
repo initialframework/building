@@ -28,4 +28,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/accBase/poleNine.glb");
+useGLTF.preload("/buildings/accBase/poleNine.glb");

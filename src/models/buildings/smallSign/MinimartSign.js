@@ -26,4 +26,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/smallSign/minimartSign.glb");
+useGLTF.preload("/buildings/smallSign/minimartSign.glb");

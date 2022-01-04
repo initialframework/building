@@ -31,4 +31,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/smallSign/javStoreSign.glb");
+useGLTF.preload("/buildings/smallSign/javStoreSign.glb");

@@ -1,0 +1,6 @@
+const AccFirstFloorFrontLeft = React.lazy(() => import("./AccFirstFloorFrontLeft"));
+const Bike = React.lazy(() => import("./Bike"));
+const CafeSignBoard = React.lazy(() => import("./CafeSignBoard"));
+const Crate = React.lazy(() => import("./Crate"));
+const Mailbox = React.lazy(() => import("./Mailbox"));
+const VendingMachine = React.lazy(() => import("./VendingMachine"));

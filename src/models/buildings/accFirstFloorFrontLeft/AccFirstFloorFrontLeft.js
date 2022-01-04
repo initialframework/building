@@ -1,9 +1,10 @@
 import React from "react";
-import Bike from "./Bike";
-import CafeSignBoard from "./CafeSignBoard";
-import Crate from "./Crate";
-import Mailbox from "./Mailbox";
-import VendingMachine from "./VendingMachine";
+
+const Bike = React.lazy(() => import("./Bike"));
+const CafeSignBoard = React.lazy(() => import("./CafeSignBoard"));
+const Crate = React.lazy(() => import("./Crate"));
+const Mailbox = React.lazy(() => import("./Mailbox"));
+const VendingMachine = React.lazy(() => import("./VendingMachine"));
 
 function AccFirstFloorFrontLeft({ value }) {
   let accFirstFloorFrontLeft = <CafeSignBoard />;

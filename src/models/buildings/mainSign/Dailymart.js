@@ -29,4 +29,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/mainSign/dailymart.glb");
+useGLTF.preload("/buildings/mainSign/dailymart.glb");

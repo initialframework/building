@@ -12,15 +12,16 @@ for f in files:
     if(childFile != './buildings/text.txt'):
         for c in childFile:
             name.append('import '+c+" from './"+c+"'")
-    print(c)
+    print(f)
 
-    # files = os.listdir(path)
+    filesName = []
 
-    # for f in files:
-    #     filesName.append('npx gltfjsx '+f)
+    for c in childFile:
+        filesName.append(
+            'const ' + c + ' = React.lazy(() => import("./'+c+'"));')
 
-    # # print(filesName)
+    print(filesName)
 
-    # filesName = np.array(filesName)
+    filesName = np.array(filesName)
 
-    # np.savetxt("./Buildings/accBase/text.txt", filesName, fmt='%s')
+    np.savetxt("./buildings/"+f+"/"+f+".txt", filesName, fmt='%s')

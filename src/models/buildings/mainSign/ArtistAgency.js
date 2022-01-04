@@ -37,4 +37,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/mainSign/artistAgency.glb");
+useGLTF.preload("/buildings/mainSign/artistAgency.glb");

@@ -39,4 +39,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/smallSign/comicStoreSign.glb");
+useGLTF.preload("/buildings/smallSign/comicStoreSign.glb");

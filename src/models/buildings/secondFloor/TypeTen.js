@@ -37,4 +37,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/secondFloor/typeTen.glb");
+useGLTF.preload("/buildings/secondFloor/typeTen.glb");

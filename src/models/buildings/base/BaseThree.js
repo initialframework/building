@@ -21,4 +21,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// // useGLTF.preload("/buildings/base/baseThree.glb");
+useGLTF.preload("/buildings/base/baseThree.glb");

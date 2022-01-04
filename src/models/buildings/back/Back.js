@@ -1,10 +1,10 @@
 import React from "react";
-import BackdoorOne from "./BackdoorOne";
-import BackdoorTwo from "./BackdoorTwo";
-import BackdoorThree from "./BackdoorThree";
-import BackdoorFour from "./BackdoorFour";
-import BackdoorFive from "./BackdoorFive";
-import TrashBinOne from "./TrashBinOne";
+const BackdoorFive = React.lazy(() => import("./BackdoorFive"));
+const BackdoorFour = React.lazy(() => import("./BackdoorFour"));
+const BackdoorOne = React.lazy(() => import("./BackdoorOne"));
+const BackdoorThree = React.lazy(() => import("./BackdoorThree"));
+const BackdoorTwo = React.lazy(() => import("./BackdoorTwo"));
+const TrashBinOne = React.lazy(() => import("./TrashBinOne"));
 
 function Back({ value }) {
   let back = <BackdoorOne />;

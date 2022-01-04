@@ -1,9 +1,9 @@
 import React from "react";
-import BigElectricBox from "./BigElectricBox";
-import CompoundElectricBox from "./CompoundElectricBox";
-import CondenserUnitTypeA from "./CondenserUnitTypeA";
-import CondenserUnitTypeD from "./CondenserUnitTypeD";
-import KitchenVent from "./KitchenVent";
+const BigElectricBox = React.lazy(() => import("./BigElectricBox"));
+const CompoundElectricBox = React.lazy(() => import("./CompoundElectricBox"));
+const CondenserUnitTypeA = React.lazy(() => import("./CondenserUnitTypeA"));
+const CondenserUnitTypeD = React.lazy(() => import("./CondenserUnitTypeD"));
+const KitchenVent = React.lazy(() => import("./KitchenVent"));
 
 function AccFirstFloorRightUpperBack({ value }) {
   let accFirstFloorRightUpperBack = <CondenserUnitTypeA />;

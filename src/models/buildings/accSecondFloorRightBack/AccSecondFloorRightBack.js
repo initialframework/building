@@ -1,9 +1,9 @@
 import React from "react";
-import CondenserUnitTypeA from "./CondenserUnitTypeA";
-import CondenserUnitTypeB from "./CondenserUnitTypeB";
-import CondenserUnitTypeC from "./CondenserUnitTypeC";
-import CondenserUnitTypeD from "./CondenserUnitTypeD";
-import WallVent from "./WallVent";
+const CondenserUnitTypeA = React.lazy(() => import("./CondenserUnitTypeA"));
+const CondenserUnitTypeB = React.lazy(() => import("./CondenserUnitTypeB"));
+const CondenserUnitTypeC = React.lazy(() => import("./CondenserUnitTypeC"));
+const CondenserUnitTypeD = React.lazy(() => import("./CondenserUnitTypeD"));
+const WallVent = React.lazy(() => import("./WallVent"));
 
 function AccSecondFloorRightBack({ value }) {
   let accSecondFloorRightBack = <CondenserUnitTypeA />;

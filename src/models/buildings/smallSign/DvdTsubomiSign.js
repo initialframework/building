@@ -29,4 +29,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/smallSign/dvdTsubomiSign.glb");
+useGLTF.preload("/buildings/smallSign/dvdTsubomiSign.glb");

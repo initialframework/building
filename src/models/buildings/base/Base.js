@@ -1,10 +1,10 @@
 import React from "react";
-import BaseFive from "./BaseFive";
-import BaseFour from "./BaseFour";
-import BaseOne from "./BaseOne";
-import BaseSix from "./BaseSix";
-import BaseThree from "./BaseThree";
-import BaseTwo from "./BaseTwo";
+const BaseFive = React.lazy(() => import("./BaseFive"));
+const BaseFour = React.lazy(() => import("./BaseFour"));
+const BaseOne = React.lazy(() => import("./BaseOne"));
+const BaseSix = React.lazy(() => import("./BaseSix"));
+const BaseThree = React.lazy(() => import("./BaseThree"));
+const BaseTwo = React.lazy(() => import("./BaseTwo"));
 
 function Base({ value }) {
   let base = <BaseThree />;

@@ -1,9 +1,9 @@
 import React from "react";
-import Bike from "./Bike";
-import Bottles from "./Bottles";
-import Crate from "./Crate";
-import GreenTrashBin from "./GreenTrashBin";
-import TrashBinWithCat from "./TrashBinWithCat";
+const Bike = React.lazy(() => import("./Bike"));
+const Bottles = React.lazy(() => import("./Bottles"));
+const Crate = React.lazy(() => import("./Crate"));
+const GreenTrashBin = React.lazy(() => import("./GreenTrashBin"));
+const TrashBinWithCat = React.lazy(() => import("./TrashBinWithCat"));
 
 function AccFirstFloorRightLowerBack({ value }) {
   let accFirstFloorRightLowerBack = <Bottles />;

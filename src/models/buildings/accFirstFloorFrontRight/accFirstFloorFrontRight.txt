@@ -1,0 +1,5 @@
+const Bonsai = React.lazy(() => import("./Bonsai"));
+const CondenserUnit = React.lazy(() => import("./CondenserUnit"));
+const Crate = React.lazy(() => import("./Crate"));
+const GachaponMachine = React.lazy(() => import("./GachaponMachine"));
+const Mailbox = React.lazy(() => import("./Mailbox"));

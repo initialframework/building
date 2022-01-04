@@ -1,27 +1,20 @@
-npx gltfjsx adultStoreSign.glb
-npx gltfjsx artistAgencySign.glb
-npx gltfjsx bankSign.glb
-npx gltfjsx bikeShopSign.glb
-npx gltfjsx bjSign.glb
-npx gltfjsx CoffeeShopSign.glb
-npx gltfjsx comicStoreSign.glb
-npx gltfjsx fujifilmSign.glb
-npx gltfjsx gameShopSign.glb
-npx gltfjsx izakayaSign.glb
-npx gltfjsx javStoreSign.glb
-npx gltfjsx jbSign.glb
-npx gltfjsx laundrySign.glb
-npx gltfjsx lawSign.glb
-npx gltfjsx luqnioSign.glb
-npx gltfjsx netcafeSign.glb
-npx gltfjsx nikoSign.glb
-npx gltfjsx oooSign.glb
-npx gltfjsx paystationSign.glb
-npx gltfjsx ramenSign.glb
-npx gltfjsx seeSign.glb
-npx gltfjsx stationerySign.glb
-npx gltfjsx sushiBarSign.glb
-npx gltfjsx toysShopSign.glb
-npx gltfjsx udonSign.glb
-npx gltfjsx weasleysSign.glb
-npx gltfjsx yoshSign.glb
+const accBase = React.lazy(() => import("./accBase"));
+const accFirstFloorFrontLeft = React.lazy(() => import("./accFirstFloorFrontLeft"));
+const accFirstFloorFrontRight = React.lazy(() => import("./accFirstFloorFrontRight"));
+const accFirstFloorRightLowerBack = React.lazy(() => import("./accFirstFloorRightLowerBack"));
+const accFirstFloorRightLowerFront = React.lazy(() => import("./accFirstFloorRightLowerFront"));
+const accFirstFloorRightUpperBack = React.lazy(() => import("./accFirstFloorRightUpperBack"));
+const accFirstFloorRightUpperFront = React.lazy(() => import("./accFirstFloorRightUpperFront"));
+const accSecondFloorBackLeft = React.lazy(() => import("./accSecondFloorBackLeft"));
+const accSecondFloorBackRight = React.lazy(() => import("./accSecondFloorBackRight"));
+const accSecondFloorLeftBack = React.lazy(() => import("./accSecondFloorLeftBack"));
+const accSecondFloorLeftFront = React.lazy(() => import("./accSecondFloorLeftFront"));
+const accSecondFloorRightBack = React.lazy(() => import("./accSecondFloorRightBack"));
+const accSecondFloorRightFront = React.lazy(() => import("./accSecondFloorRightFront"));
+const back = React.lazy(() => import("./back"));
+const base = React.lazy(() => import("./base"));
+const firstFloor = React.lazy(() => import("./firstFloor"));
+const front = React.lazy(() => import("./front"));
+const mainSign = React.lazy(() => import("./mainSign"));
+const secondFloor = React.lazy(() => import("./secondFloor"));
+const smallSign = React.lazy(() => import("./smallSign"));

@@ -24,4 +24,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/back/trashBinOne.glb");
+useGLTF.preload("/buildings/back/trashBinOne.glb");

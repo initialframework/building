@@ -26,4 +26,4 @@ export default function Model({ ...props }) {
   );
 }
 
-// useGLTF.preload("/buildings/smallSign/dvdSign.glb");
+useGLTF.preload("/buildings/smallSign/dvdSign.glb");
