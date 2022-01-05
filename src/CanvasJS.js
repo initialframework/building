@@ -128,6 +128,7 @@ function CanvasJS() {
       })
       .then(function (myJson) {
         setData(myJson[url - 1].attributes);
+        console.log(myJson[url - 1].attributes);
       });
   };
 
@@ -146,6 +147,7 @@ function CanvasJS() {
         camera={{
           position: [-15, 10, 15],
         }}
+        frameloop="demand"
       >
         <color attach="background" args={["#070a0d"]} />
         <hemisphereLight intensity={0.1} />

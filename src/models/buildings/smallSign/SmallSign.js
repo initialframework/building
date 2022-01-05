@@ -44,7 +44,7 @@ function SmallSign({ value }) {
     case "ZeroFourMartSign":
       smallSign = <ZeroFourMartSign />;
       break;
-    case "JTTravelAgencySign":
+    case "JtTravelAgencySign":
       smallSign = <JTTravelAgencySign />;
       break;
     case "StationeryToraSign":
