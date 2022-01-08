@@ -17724,6 +17724,7 @@ function CanvasJS() {
       ],
     },
   ];
+  console.log(data[url - 1]);
 
   return (
     <React.Fragment>
@@ -17781,7 +17782,7 @@ function CanvasJS() {
                 luminanceThreshold={0.6}
                 luminanceSmoothing={0.2}
               />
-              {data.length > 0 ? <Model data={data[url - 1]} /> : ""}
+              <Model data={data[url - 1].attributes} />
             </EffectComposer>
           </group>
         </Suspense>
