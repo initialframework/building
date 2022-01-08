@@ -50,7 +50,7 @@ function MainSign({ value }) {
     case "Sfc":
       mainSign = <Sfc />;
       break;
-    case "RamenIAN":
+    case "RamenIan":
       mainSign = <RamenIAN />;
       break;
     case "RaceworldWorkshop":

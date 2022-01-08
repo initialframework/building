@@ -8,7 +8,7 @@ import { useGLTF } from "@react-three/drei";
 export default function Model({ ...props }) {
   const group = useRef();
   const { nodes, materials } = useGLTF(
-    "/buildings/smallSign/JTTravelAgencySign.glb"
+    "/buildings/smallSign/jttTravelAgencySign.glb"
   );
   return (
     <group ref={group} {...props} dispose={null}>
@@ -26,4 +26,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/smallSign/JTTravelAgencySign.glb");
+useGLTF.preload("/buildings/smallSign/jttTravelAgencySign.glb");

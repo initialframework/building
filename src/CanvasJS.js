@@ -8,27 +8,8 @@ import {
 } from "@react-three/drei";
 import { Bloom, EffectComposer, SMAA } from "@react-three/postprocessing";
 import { Resizer, KernelSize } from "postprocessing";
-import Fireflies from "./components/Fireflies";
-import Base from "./models/buildings/base/Base";
-import FirstFloor from "./models/buildings/firstFloor/FirstFloor";
-import SecondFloor from "./models/buildings/secondFloor/SecondFloor";
-import AccBase from "./models/buildings/accBase/AccBase";
-import AccFirstFloorFrontLeft from "./models/buildings/accFirstFloorFrontLeft/AccFirstFloorFrontLeft";
-import AccFirstFloorFrontRight from "./models/buildings/accFirstFloorFrontRight/AccFirstFloorFrontRight";
-import AccFirstFloorRightLowerBack from "./models/buildings/accFirstFloorRightLowerBack/AccFirstFloorRightLowerBack";
-import AccFirstFloorRightLowerFront from "./models/buildings/accFirstFloorRightLowerFront/AccFirstFloorRightLowerFront";
-import AccFirstFloorRightUpperBack from "./models/buildings/accFirstFloorRightUpperBack/AccFirstFloorRightUpperBack";
-import AccFirstFloorRightUpperFront from "./models/buildings/accFirstFloorRightUpperFront/AccFirstFloorRightUpperFront";
-import AccSecondFloorBackLeft from "./models/buildings/accSecondFloorBackLeft/AccSecondFloorBackLeft";
-import AccSecondFloorBackRight from "./models/buildings/accSecondFloorBackRight/AccSecondFloorBackRight";
-import AccSecondFloorLeftBack from "./models/buildings/accSecondFloorLeftBack/AccSecondFloorLeftBack";
-import AccSecondFloorLeftFront from "./models/buildings/accSecondFloorLeftFront/AccSecondFloorLeftFront";
-import AccSecondFloorRightBack from "./models/buildings/accSecondFloorRightBack/AccSecondFloorRightBack";
-import AccSecondFloorRightFront from "./models/buildings/accSecondFloorRightFront/AccSecondFloorRightFront";
-import Front from "./models/buildings/front/Front";
-import MainSign from "./models/buildings/mainSign/MainSign";
-import SmallSign from "./models/buildings/smallSign/SmallSign";
-import Back from "./models/buildings/back/Back";
+// import Fireflies from "./components/Fireflies";
+import Model from "./models/Model";
 
 function CanvasJS() {
   let url = useParams().id;
@@ -195,74 +176,7 @@ function CanvasJS() {
                 luminanceThreshold={0.6}
                 luminanceSmoothing={0.2}
               />
-              <Base value={data[0]?.value.replace(/\s/g, "") ?? "BaseFour"} />
-              <AccBase
-                value={data[1].value.replace(/\s/g, "") ?? "PoleEleven"}
-              />
-              <FirstFloor
-                value={data[2].value.replace(/\s/g, "") ?? "TypeFiveteen"}
-              />
-              <AccFirstFloorFrontLeft
-                value={data[3].value.replace(/\s/g, "") ?? "Crate"}
-              />
-              <AccFirstFloorFrontRight
-                value={data[4].value.replace(/\s/g, "") ?? "Bonsai"}
-              />
-              <AccFirstFloorRightLowerBack
-                value={data[5].value.replace(/\s/g, "") ?? "Bottles"}
-              />
-              <AccFirstFloorRightLowerFront
-                value={data[6].value.replace(/\s/g, "") ?? "Poster"}
-              />
-              <AccFirstFloorRightUpperBack
-                value={data[7].value.replace(/\s/g, "") ?? "CondenserUnitTypeA"}
-              />
-              <AccFirstFloorRightUpperFront
-                value={data[8].value.replace(/\s/g, "") ?? "LightBox"}
-              />
-              <SecondFloor
-                value={data[9].value.replace(/\s/g, "") ?? "TypeFiveteen"}
-              />
-              <AccSecondFloorBackLeft
-                value={data[10].value.replace(/\s/g, "") ?? "WallVent"}
-              />
-              <AccSecondFloorBackRight
-                value={
-                  data[11].value.replace(/\s/g, "") ?? "CondenserUnitTypeA"
-                }
-              />
-              <AccSecondFloorLeftBack
-                value={
-                  data[12].value.replace(/\s/g, "") ?? "CondenserUnitTypeB"
-                }
-              />
-              <AccSecondFloorLeftFront
-                value={
-                  data[13].value.replace(/\s/g, "") ?? "CondenserUnitTypeB"
-                }
-              />
-              <AccSecondFloorRightBack
-                value={
-                  data[14].value.replace(/\s/g, "") ?? "CondenserUnitTypeD"
-                }
-              />
-              <AccSecondFloorRightFront
-                value={
-                  data[15].value.replace(/\s/g, "") ?? "CondenserUnitTypeA"
-                }
-              />
-              <Front
-                value={data[16].value.replace(/\s/g, "") ?? "RollingDoorTwo"}
-              />
-              <Back
-                value={data[17].value.replace(/\s/g, "") ?? "BackdoorOne"}
-              />
-              <MainSign
-                value={data[18].value.replace(/\s/g, "") ?? "Laundry"}
-              />
-              <SmallSign
-                value={data[19].value.replace(/\s/g, "") ?? "LaundrySign"}
-              />
+              <Model data={data} />
             </EffectComposer>
           </group>
         </Suspense>

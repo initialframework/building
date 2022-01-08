@@ -37,6 +37,7 @@ const ToysShopSign = React.lazy(() => import("./ToysShopSign"));
 const UdonSign = React.lazy(() => import("./UdonSign"));
 const YoshSign = React.lazy(() => import("./YoshSign"));
 const ZeroFourMartSign = React.lazy(() => import("./ZeroFourMartSign"));
+const MechaCafeSign = React.lazy(() => import("./MechaCafeSign"));
 
 function SmallSign({ value }) {
   let smallSign = <LawSign />;
@@ -44,7 +45,7 @@ function SmallSign({ value }) {
     case "ZeroFourMartSign":
       smallSign = <ZeroFourMartSign />;
       break;
-    case "JtTravelAgencySign":
+    case "JttTravelAgencySign":
       smallSign = <JTTravelAgencySign />;
       break;
     case "StationeryToraSign":
@@ -53,7 +54,7 @@ function SmallSign({ value }) {
     case "SfcSign":
       smallSign = <SfcSign />;
       break;
-    case "RamenIANSign":
+    case "RamenIanSign":
       smallSign = <RamenIANSign />;
       break;
     case "RaceworldWorkshopSign":
@@ -148,6 +149,9 @@ function SmallSign({ value }) {
       break;
     case "NetcafeSign":
       smallSign = <NetcafeSign />;
+      break;
+    case "MechaCafeSign":
+      smallSign = <MechaCafeSign />;
       break;
     default:
       smallSign = <LawSign />;
