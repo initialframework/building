@@ -10,9 +10,9 @@ export default function Model({ ...props }) {
   const { nodes, materials } = useGLTF(
     "/buildings/smallSign/artistAgencySign.glb"
   );
-  materials.merah.emissive.b = 0.2;
-  materials.merah.emissive.g = 0.5;
-  materials.merah.emissive.r = 10;
+  materials.putih.emissive.b = 5;
+  materials.putih.emissive.g = 5;
+  materials.putih.emissive.r = 5;
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
@@ -27,12 +27,6 @@ export default function Model({ ...props }) {
           receiveShadow
           geometry={nodes.ObjObject_2.geometry}
           material={materials.putih}
-        />
-        <mesh
-          castShadow
-          receiveShadow
-          geometry={nodes.ObjObject_3.geometry}
-          material={materials.merah}
         />
       </group>
     </group>

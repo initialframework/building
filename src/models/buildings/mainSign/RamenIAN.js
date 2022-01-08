@@ -7,7 +7,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function Model({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/buildings/mainSign/ramenIan.glb");
+  const { nodes, materials } = useGLTF("/buildings/mainSign/RamenIan.glb");
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
@@ -24,4 +24,4 @@ export default function Model({ ...props }) {
   );
 }
 
-useGLTF.preload("/buildings/mainSign/ramenIan.glb");
+useGLTF.preload("/buildings/mainSign/RamenIan.glb");

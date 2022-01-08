@@ -14,88 +14,90 @@ import Model from "./models/Model";
 function CanvasJS() {
   let url = useParams().id;
 
-  const [data, setData] = useState([
-    {
-      trait_type: "Base",
-      value: "Base Four",
-    },
-    {
-      trait_type: "Acc Base",
-      value: "Pole Six",
-    },
-    {
-      trait_type: "First Floor",
-      value: "Type One",
-    },
-    {
-      trait_type: "Acc First Floor Front Left",
-      value: "Bike",
-    },
-    {
-      trait_type: "Acc First Floor Front Right",
-      value: "Crate",
-    },
-    {
-      trait_type: "Acc First Floor Right Lower Back",
-      value: "Bike",
-    },
-    {
-      trait_type: "Acc First Floor Right Lower Front",
-      value: "Wooden Box",
-    },
-    {
-      trait_type: "Acc First Floor Right Upper Back",
-      value: "Condenser Unit Type D",
-    },
-    {
-      trait_type: "Acc First Floor Right Upper Front",
-      value: "Pipe",
-    },
-    {
-      trait_type: "Second Floor",
-      value: "Type Five",
-    },
-    {
-      trait_type: "Acc Second Floor Back Left",
-      value: "Wall Vent",
-    },
-    {
-      trait_type: "Acc Second Floor Back Right",
-      value: "Wall Vent",
-    },
-    {
-      trait_type: "Acc Second Floor Left Back",
-      value: "Condenser Unit Type D",
-    },
-    {
-      trait_type: "Acc Second Floor Left Front",
-      value: "Condenser Unit Type D",
-    },
-    {
-      trait_type: "Acc Second Floor Right Back",
-      value: "Wall Vent",
-    },
-    {
-      trait_type: "Acc Second Floor Right Front",
-      value: "Condenser Unit Type C",
-    },
-    {
-      trait_type: "Front",
-      value: "Store Two",
-    },
-    {
-      trait_type: "Back",
-      value: "Backdoor Five",
-    },
-    {
-      trait_type: "Main Sign",
-      value: "Game Shop",
-    },
-    {
-      trait_type: "Small Sign",
-      value: "Luqnio Sign",
-    },
-  ]);
+  // const [data, setData] = useState([
+  //   {
+  //     trait_type: "Base",
+  //     value: "Base Four",
+  //   },
+  //   {
+  //     trait_type: "Acc Base",
+  //     value: "Pole Six",
+  //   },
+  //   {
+  //     trait_type: "First Floor",
+  //     value: "Type One",
+  //   },
+  //   {
+  //     trait_type: "Acc First Floor Front Left",
+  //     value: "Bike",
+  //   },
+  //   {
+  //     trait_type: "Acc First Floor Front Right",
+  //     value: "Crate",
+  //   },
+  //   {
+  //     trait_type: "Acc First Floor Right Lower Back",
+  //     value: "Bike",
+  //   },
+  //   {
+  //     trait_type: "Acc First Floor Right Lower Front",
+  //     value: "Wooden Box",
+  //   },
+  //   {
+  //     trait_type: "Acc First Floor Right Upper Back",
+  //     value: "Condenser Unit Type D",
+  //   },
+  //   {
+  //     trait_type: "Acc First Floor Right Upper Front",
+  //     value: "Pipe",
+  //   },
+  //   {
+  //     trait_type: "Second Floor",
+  //     value: "Type Five",
+  //   },
+  //   {
+  //     trait_type: "Acc Second Floor Back Left",
+  //     value: "Wall Vent",
+  //   },
+  //   {
+  //     trait_type: "Acc Second Floor Back Right",
+  //     value: "Wall Vent",
+  //   },
+  //   {
+  //     trait_type: "Acc Second Floor Left Back",
+  //     value: "Condenser Unit Type D",
+  //   },
+  //   {
+  //     trait_type: "Acc Second Floor Left Front",
+  //     value: "Condenser Unit Type D",
+  //   },
+  //   {
+  //     trait_type: "Acc Second Floor Right Back",
+  //     value: "Wall Vent",
+  //   },
+  //   {
+  //     trait_type: "Acc Second Floor Right Front",
+  //     value: "Condenser Unit Type C",
+  //   },
+  //   {
+  //     trait_type: "Front",
+  //     value: "Store Two",
+  //   },
+  //   {
+  //     trait_type: "Back",
+  //     value: "Backdoor Five",
+  //   },
+  //   {
+  //     trait_type: "Main Sign",
+  //     value: "Game Shop",
+  //   },
+  //   {
+  //     trait_type: "Small Sign",
+  //     value: "Luqnio Sign",
+  //   },
+  // ]);
+
+  const [data, setData] = useState([]);
 
   const getData = () => {
     fetch("data.json", {
@@ -176,7 +178,7 @@ function CanvasJS() {
                 luminanceThreshold={0.6}
                 luminanceSmoothing={0.2}
               />
-              <Model data={data} />
+              {data.length > 0 ? <Model data={data} /> : ""}
             </EffectComposer>
           </group>
         </Suspense>
