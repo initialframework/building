@@ -38,12 +38,16 @@ const UdonSign = React.lazy(() => import("./UdonSign"));
 const YoshSign = React.lazy(() => import("./YoshSign"));
 const ZeroFourMartSign = React.lazy(() => import("./ZeroFourMartSign"));
 const MechaCafeSign = React.lazy(() => import("./MechaCafeSign"));
+const WeasleysSign = React.lazy(() => import("./WeasleysSign"));
 
 function SmallSign({ value }) {
   let smallSign = <LawSign />;
   switch (value) {
     case "ZeroFourMartSign":
       smallSign = <ZeroFourMartSign />;
+      break;
+    case "WeasleysSign":
+      smallSign = <WeasleysSign />;
       break;
     case "JttTravelAgencySign":
       smallSign = <JTTravelAgencySign />;
