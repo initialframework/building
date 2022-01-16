@@ -5,8 +5,10 @@ import {
   Environment,
   OrbitControls,
   PerspectiveCamera,
+  Html,
+  useProgress,
 } from "@react-three/drei";
-import { Bloom, EffectComposer, SMAA } from "@react-three/postprocessing";
+import { Bloom, EffectComposer, SMAA, SSAO } from "@react-three/postprocessing";
 import { Resizer, KernelSize } from "postprocessing";
 // import Fireflies from "./components/Fireflies";
 import Model from "./models/Model";
@@ -37,7 +39,7 @@ function CanvasJS() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  console.log(data[url - 1]);
+  // console.log(data[url - 1]);
 
   return (
     <React.Fragment>
@@ -64,7 +66,12 @@ function CanvasJS() {
         />
         <Suspense fallback={null}>
           <group position={[0, -6, 0]}>
-            <EffectComposer multisampling={0}>
+            <Model data={data} />
+          </group>
+        </Suspense>
+        <Suspense fallback={null} smaa>
+          <group position={[0, -6, 0]}>
+            <EffectComposer>
               <group position={[0, 0, 0]}>
                 <mesh
                   rotation-x={-Math.PI / 2}
@@ -82,7 +89,7 @@ function CanvasJS() {
                   />
                 </mesh>
               </group>
-              <SMAA />
+              {/* <SMAA /> */}
               {/* <group position={[0, 5, 0]}>
                 <Fireflies count={65} />
               </group> */}
@@ -95,7 +102,7 @@ function CanvasJS() {
                 luminanceThreshold={0.6}
                 luminanceSmoothing={0.2}
               />
-              <Model data={data} />
+              <SSAO />
             </EffectComposer>
           </group>
         </Suspense>

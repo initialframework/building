@@ -148,7 +148,7 @@ function SmallSign({ value }) {
     case "YoshSign":
       smallSign = <YoshSign />;
       break;
-    case "FujifilmSign":
+    case "FwifilmSign":
       smallSign = <FujifilmSign />;
       break;
     case "NetcafeSign":

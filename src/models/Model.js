@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 
 import Base from "./buildings/base/Base";
 import FirstFloor from "./buildings/firstFloor/FirstFloor";
@@ -23,52 +23,54 @@ import Back from "./buildings/back/Back";
 
 function Model({ data }) {
   return (
-    <React.Fragment>
+    <>
       <Base value={data[0]?.value.replace(/\s/g, "") ?? "BaseFour"} />
-      <AccBase value={data[1].value.replace(/\s/g, "") ?? "PoleEleven"} />
-      <FirstFloor value={data[2].value.replace(/\s/g, "") ?? "TypeFiveteen"} />
+      <AccBase value={data[1]?.value.replace(/\s/g, "") ?? "PoleEleven"} />
+      <FirstFloor value={data[2]?.value.replace(/\s/g, "") ?? "TypeFiveteen"} />
       <AccFirstFloorFrontLeft
-        value={data[3].value.replace(/\s/g, "") ?? "Crate"}
+        value={data[3]?.value.replace(/\s/g, "") ?? "Crate"}
       />
       <AccFirstFloorFrontRight
-        value={data[4].value.replace(/\s/g, "") ?? "Bonsai"}
+        value={data[4]?.value.replace(/\s/g, "") ?? "Bonsai"}
       />
       <AccFirstFloorRightLowerBack
-        value={data[5].value.replace(/\s/g, "") ?? "Bottles"}
+        value={data[5]?.value.replace(/\s/g, "") ?? "Bottles"}
       />
       <AccFirstFloorRightLowerFront
-        value={data[6].value.replace(/\s/g, "") ?? "Poster"}
+        value={data[6]?.value.replace(/\s/g, "") ?? "Poster"}
       />
       <AccFirstFloorRightUpperBack
-        value={data[7].value.replace(/\s/g, "") ?? "CondenserUnitTypeA"}
+        value={data[7]?.value.replace(/\s/g, "") ?? "CondenserUnitTypeA"}
       />
       <AccFirstFloorRightUpperFront
-        value={data[8].value.replace(/\s/g, "") ?? "LightBox"}
+        value={data[8]?.value.replace(/\s/g, "") ?? "LightBox"}
       />
-      <SecondFloor value={data[9].value.replace(/\s/g, "") ?? "TypeFiveteen"} />
+      <SecondFloor
+        value={data[9]?.value.replace(/\s/g, "") ?? "TypeFiveteen"}
+      />
       <AccSecondFloorBackLeft
-        value={data[10].value.replace(/\s/g, "") ?? "WallVent"}
+        value={data[10]?.value.replace(/\s/g, "") ?? "WallVent"}
       />
       <AccSecondFloorBackRight
-        value={data[11].value.replace(/\s/g, "") ?? "CondenserUnitTypeA"}
+        value={data[11]?.value.replace(/\s/g, "") ?? "CondenserUnitTypeA"}
       />
       <AccSecondFloorLeftBack
-        value={data[12].value.replace(/\s/g, "") ?? "CondenserUnitTypeB"}
+        value={data[12]?.value.replace(/\s/g, "") ?? "CondenserUnitTypeB"}
       />
       <AccSecondFloorLeftFront
-        value={data[13].value.replace(/\s/g, "") ?? "CondenserUnitTypeB"}
+        value={data[13]?.value.replace(/\s/g, "") ?? "CondenserUnitTypeB"}
       />
       <AccSecondFloorRightBack
-        value={data[14].value.replace(/\s/g, "") ?? "CondenserUnitTypeD"}
+        value={data[14]?.value.replace(/\s/g, "") ?? "CondenserUnitTypeD"}
       />
       <AccSecondFloorRightFront
-        value={data[15].value.replace(/\s/g, "") ?? "CondenserUnitTypeA"}
+        value={data[15]?.value.replace(/\s/g, "") ?? "CondenserUnitTypeA"}
       />
-      <Front value={data[16].value.replace(/\s/g, "") ?? "RollingDoorTwo"} />
-      <Back value={data[17].value.replace(/\s/g, "") ?? "BackdoorOne"} />
-      <MainSign value={data[18].value.replace(/\s/g, "") ?? "Laundry"} />
-      <SmallSign value={data[19].value.replace(/\s/g, "") ?? "LaundrySign"} />
-    </React.Fragment>
+      <Front value={data[16]?.value.replace(/\s/g, "") ?? "RollingDoorTwo"} />
+      <Back value={data[17]?.value.replace(/\s/g, "") ?? "BackdoorOne"} />
+      <MainSign value={data[18]?.value.replace(/\s/g, "") ?? "Laundry"} />
+      <SmallSign value={data[19]?.value.replace(/\s/g, "") ?? "NetcafeSign"} />
+    </>
   );
 }
 
