@@ -1,5 +1,4 @@
-import React, { Suspense } from "react";
-
+import React from "react";
 import Base from "./buildings/base/Base";
 import FirstFloor from "./buildings/firstFloor/FirstFloor";
 import SecondFloor from "./buildings/secondFloor/SecondFloor";

@@ -1,45 +1,20 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { Suspense } from "react";
 import { useParams } from "react-router-dom";
 import { Canvas } from "@react-three/fiber";
 import {
   Environment,
   OrbitControls,
   PerspectiveCamera,
-  Html,
-  useProgress,
 } from "@react-three/drei";
-import { Bloom, EffectComposer, SMAA, SSAO } from "@react-three/postprocessing";
+import { Bloom, EffectComposer, SSAO } from "@react-three/postprocessing";
 import { Resizer, KernelSize } from "postprocessing";
 // import Fireflies from "./components/Fireflies";
 import Model from "./models/Model";
+import { Data } from "./Data";
 
 function CanvasJS() {
   let url = useParams().id;
-
-  const [data, setData] = useState([]);
-
-  const getData = () => {
-    fetch("data.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (myJson) {
-        setData(myJson[url - 1].attributes);
-        console.log(myJson[url - 1].attributes);
-      });
-  };
-
-  useEffect(() => {
-    getData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  // console.log(data[url - 1]);
+  const data = Data[url - 1].attributes;
 
   return (
     <React.Fragment>
