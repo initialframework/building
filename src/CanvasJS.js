@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { Canvas } from "@react-three/fiber";
@@ -16,8 +16,14 @@ import Model from "./models/Model";
 
 function CanvasJS() {
   let url = useParams().id;
-  let data = useSelector((state) => state.buildings.buildingListByUrl);
-  data = data[url - 1].attributes;
+  const [data, setData] = useState([]);
+  const buildingListByUrl = useSelector(
+    (state) => state.buildings.buildingListByUrl
+  );
+
+  useEffect(() => {
+    setData(buildingListByUrl[url - 1].attributes);
+  }, [url, buildingListByUrl]);
 
   return (
     <React.Fragment>
