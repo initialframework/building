@@ -34,10 +34,14 @@ const Udon = React.lazy(() => import("./Udon"));
 const Weasleys = React.lazy(() => import("./Weasleys"));
 const Yosh = React.lazy(() => import("./Yosh"));
 const ZeroFourMart = React.lazy(() => import("./ZeroFourMart"));
+const MechaCafe = React.lazy(() => import("./MechaCafe"));
 
 function MainSign({ value }) {
   let mainSign = <Ooo />;
   switch (value) {
+    case "MechaCafe":
+      mainSign = <MechaCafe />;
+      break;
     case "ZeroFourMart":
       mainSign = <ZeroFourMart />;
       break;
