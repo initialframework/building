@@ -11,8 +11,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/:id" element={<CanvasJS />} />
-        <Route exact path="/" element={<Navigate to="/1" />} />
+        <Route exact path="/building/:id" element={<CanvasJS />} />
+        <Route exact path="/" element={<Navigate to="/building/1" />} />
       </Routes>
     </Router>
   );
